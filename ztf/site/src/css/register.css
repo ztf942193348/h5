@@ -1,0 +1,115 @@
+#all{width: 990px;margin:0 auto;}
+
+/*===================================================*/
+#top{height: 113px;}
+#main{/*height: 460px;*/border:1px solid #Ccc;border-top:2px solid #0083ce;overflow:hidden;box-shadow: -1px 1px 10px #EFEFEF, -1px 10px 10px #EFEFEF; min-height: 352px;}
+
+/*======================main=============================*/
+
+#main h2{font-size: 18px;padding:20px 20px 0 50px;}
+#main h2 span{float:right;font-size:14px;}
+#main .main_c{background:url("../images/registe/1.png") no-repeat right top;}
+
+#main form{width: 342px;/*height:300px;*/padding-left:90px;}
+#main form input{width:290px;height: 26px;border:1px solid #e6e6e6;padding: 6px 12px 6px 40px;background:url("../images/login/3.png") no-repeat;margin-top:10px;}
+
+#main form .phonenumber{color:#fff;display:inline-block;height: 10px;}
+
+#main form input:nth-of-type(1){background-position: 8px -114px;}
+#main form input:nth-of-type(2){background-position: 8px -145px;}
+
+#main form .information{color:#fff;display:inline-block;}
+#main form .surepass{background-position: 8px -145px;background-color:#f3f3f3;margin-top: 10px;}  
+
+#main form .agree{width:15px;height:15px;margin-top:30px;vertical-align:bottom;}
+#main form .agree span{line-height: 15px;margin-top:30px;color:#a5a5a5;}
+
+#main form .zhuce{cursor:pointer;background:#0099F1 none;color:#fff;text-align: center;font-size: 16px;border:2px solid #0099F1; border-bottom:2px solid #0083ce;width:286px;margin-top: 10px;}
+
+/*====================手机号验证=======================*/
+.main_c{position: relative;}
+.main_c .useryz{display:none;position: absolute;left:360px;top:22px;font-size: 12px;color:#ffaa00;}
+.main_c .useryz i{display:inline-block;width: 16px;height: 16px;border-radius: 50%;background-color:#ffaa00;color:#fff;text-align: center;line-height: 16px;}
+
+/*======================密码强度及验证======================*/
+.main_c .box_safety{position: relative;display:none;float:right;margin:0;}
+.main_c .box_safety span{float: left;}
+.main_c .box_safety ul{float: left;width: 100px;}
+.main_c .box_safety ul li{display:inline-block;width:30px;background-color: #ccc;text-align: center;color:#fff;}
+
+
+.main_c .pas_ruo ul li:nth-child(1){background-color:#ffaa00;}
+
+.main_c .pas_middle ul li:nth-child(1),.main_c .pas_middle li:nth-child(2){background-color:#ffaa00;}
+
+.main_c .pas_qiang ul li:nth-child(1),.main_c .pas_qiang li:nth-child(2),.main_c .pas_qiang li:nth-child(3){background-color:#ffaa00;}
+
+
+/*==========================验证码===========================*/
+.main_c .yanzheng{height: 140px;display:none;}
+#main .main_c .yanzhengma input{width: 120px;}
+#main .main_c .yanzhengma span{display:inline-block;width:100px;background:#ccc;height: 40px;line-height: 40px;text-align: center;vertical-align: bottom;}
+#main .main_c .yanzhengma .changeyzm{display:inline-block;width: 50px;height:30px;text-align: center;line-height: 30px;color:blue;}
+#main .main_c .yanzhengma .output{color:#fff;}
+
+
+/*=========================短信验证===========================*/
+#main .main_c .btn_verify{display:inline-block;width: 120px;height: 38px;background:#fff url(https://s.maiyaole.com/images/passport/btn_verify_bg.jpg) repeat-x left bottom;
+    border: 1px solid #E6E6E6;text-align: center;line-height: 30px;margin-left:10px;vertical-align: bottom;line-height: 38px;color:#000;}
+
+#main .main_c #msgcd_desc{color:#Fff;}
+
+
+
+/*===================验证符号=========================*/
+
+#main .main_c form .icon_true{
+    display:none;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left:410px;
+    top:25px; 
+    background: url(../images/registe/2.png) no-repeat 0 0;
+}
+#main .main_c form #password_true{
+    position: absolute;
+    left:410px;
+    top:90px;
+}
+#main .main_c form #password2_true{
+    position: absolute;
+    left:410px;
+    top:155px;
+}
+
+
+/*========================合作伙伴========================*/
+
+.main_cb{display:inline-block;width: 342px;height: 70px;padding-left:90px;}
+.main_cb p{padding:5px 0;}
+.main_cb a{display:inline-block;width:40px;height:40px;background:url("../images/login/4.png") no-repeat;margin-right: 10px;}
+
+.main_cb a:nth-of-type(1){background-position: 0 0;}
+.main_cb a:nth-of-type(2){background-position: -48px 0;}
+.main_cb a:nth-of-type(3){background-position: -95px 0;}
+.main_cb a:nth-of-type(4){background-position: -143px 0;}
+.main_cb a:nth-of-type(5){background-position: -241px 0;}
+.main_cb a:nth-of-type(6){background-position: -191px 0;}
+
+.main_cb a:nth-of-type(1):hover{background-position: 0 -52px;}
+.main_cb a:nth-of-type(2):hover{background-position: -48px -52px;}
+.main_cb a:nth-of-type(3):hover{background-position:  -95px -52px;}
+.main_cb a:nth-of-type(4):hover{background-position: -143px -52px;}
+.main_cb a:nth-of-type(5):hover{background-position: -241px -52px;}
+.main_cb a:nth-of-type(6):hover{background-position: -191px -52px;}
+
+
+
+/*=========================footer===========================*/
+#footer{text-align: center;margin-top: 30px;}
+#footer p{line-height: 20px;}
+#footer span{border-right:1px solid #ccc;}
+#footer span a{color:#666;margin:0 8px;}
+
+

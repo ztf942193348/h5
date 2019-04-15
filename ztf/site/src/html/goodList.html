@@ -1,0 +1,2903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>列表页</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/goodList.css">
+    <script src="../lib/jquery-3.0.0.js"></script>
+    <script src="../js/goodList.js"></script>
+</head>
+
+<body>
+    <div id="yiyaowang">
+        <div id="header">
+            <div class="nav">
+                <div class="container clearfix">
+                    <div class="songhuo fl">
+                        送货至<span>广东 <i class="icon icon-jiantouxia"></i></span>
+                        <ul>
+                            <li>
+                                A <a href="">安徽</a>
+                            </li>
+                            <li>
+                                B <a href="">北京</a>
+                            </li>
+                            <li>
+                                C <a href="">重庆</a>
+                            </li>
+                            <li>
+                                G <a href="">广东</a><a href="">广西</a><a href="">贵州</a><a href="">甘肃</a>
+                            </li>
+                            <li>
+                                F <a href="">福建</a>
+                            </li>
+                            <li>
+                                H <a href="">河北</a><a href="">黑龙江</a><a href="">海南</a><a href="">湖北</a><a
+                                    href="">湖南</a><a href="">河南</a>
+                            </li>
+                            <li>
+                                J <a href="">辽宁</a>
+                            </li>
+                            <li>
+                                N <a href="">内蒙古</a><a href="">宁夏</a>
+                            </li>
+                            <li>
+                                Q <a href="">青海</a>
+                            </li>
+                            <li>
+                                S <a href="">上海</a><a href="">山东</a><a href="">山西</a><a href="">四川</a><a href="">陕西</a>
+                            </li>
+                            <li>
+                                T <a href="">天津</a>
+                            </li>
+                            <li>
+                                X <a href="">西藏</a><a href="">新疆</a>
+                            </li>
+                            <li>
+                                Y <a href="">云南</a>
+                            </li>
+                            <li>
+                                Z <a href="">浙江</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="zhuce fr">
+                        <li>
+                            <span class="border">
+                                <a href="../html/login.html" class="denglu" style="color: red">请登录</a>
+                                <a href="../html/register.html" class="zhuce">注册</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="border">
+                                <a href="">我的订单</a>
+                            </span>
+                        </li>
+                        <li class="menu">
+                            <span class="border">
+                                <a href="">我的1药网<span class="icon icon-jiantouxia" style="font-size: 10px"></span></a>
+                            </span>
+                            <ul>
+                                <li><a href="">我的优惠券</a></li>
+                                <li><a href="">我的收藏夹</a></li>
+                                <li><a href="">商品评价</a></li>
+                                <li><a href="">我的私人定制</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="border">
+                                <a href="">帮助中心</a>
+                            </span>
+                        </li>
+                        <li class="tel">
+                            <span class="border">
+                                400-007-0958
+                            </span>
+                        </li>
+                        <li>
+                            <span class="border">
+                                <a href=""><span class="icon shouji" style="color: red">&#xe615;</span>手机APP</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search container clearfix">
+                <div class="logo fl"><a href=""></a></div>
+                <div class="center fl">
+                    <form action="" class="clearfix">
+                        <input type="text" placeholder="万艾可" class="word"><button class="icon icon-search"></button>
+
+                    </form>
+                    <div class="xiamian">
+                        <a href="">阿胶</a>
+                        <a href="">感冒</a>
+                        <a href="">逍遥丸</a>
+                        <a href="">补肺丸</a>
+                        <a href="">妇炎洁</a>
+                        <a href="">血压计</a>
+                        <a href="">护理液</a>
+                    </div>
+                </div>
+                <div class="erweima fl">
+                    <img src="../images/2DCodenew2.jpg" alt="">
+                </div>
+                <div class="cart fl">
+                    <a href="../html/cart.html">
+                        <i class="icon icon-gouwuchekong"></i>
+                        <span class="geshu">0</span>
+                        <span class="gouwuche">购物车</span>
+                        <i class="icon icon-jiantouyou"></i>
+                    </a>
+                    <div class="mini_cart">
+                        <!-- 购物车有商品时 -->
+                        <ul></ul>
+                        <div class="none_tips">
+                                <i> </i>
+                                <p>
+                                    您的购物车里还没有商品，如已添加商品，请 <a href="html/login.html" target="_self">登录 </a> 。
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="fenlei container clearfix">
+                <li class="daohang">
+                    <a href="">所有商品分类</a>
+                    <ul>
+                        <li>
+                            <i class="icon icon-wanpill"></i>
+                            <span>中西药品</span>
+                            <div class="xiangqing">
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="" class="red">男科疾病</a></dt>
+                                        <dd><a href="">阳痿早泄</a></dd>
+                                        <dd><a href="">男性不育症</a></dd>
+                                        <dd><a href="">前列腺炎</a></dd>
+                                        <dd><a href="">肾病</a></dd>
+                                        <dd><a href="">泌尿系统疾病</a></dd>
+                                        <dd><a href="">补肾</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">滋补调养</a></dt>
+                                        <dd><a href="">补血补气</a></dd>
+                                        <dd><a href="" class="red">补肾壮阳</a></dd>
+                                        <dd><a href="">减肥瘦身</a></dd>
+                                        <dd><a href="">增强抵抗力</a></dd>
+                                        <dd><a href="">安神助眠</a></dd>
+                                        <dd><a href="">免疫调节</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">心脑血管</a></dt>
+                                        <dd><a href="" class="red">高血压</a></dd>
+                                        <dd><a href="">脑血管病</a></dd>
+                                        <dd><a href="">冠心病</a></dd>
+                                        <dd><a href="">高血脂</a></dd>
+                                        <dd><a href="">心绞痛</a></dd>
+                                        <dd><a href="">静脉曲张</a></dd>
+                                        <dd><a href="">心力衰竭</a></dd>
+                                        <dd><a href="">血液病</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">神经系统</a></dt>
+                                        <dd><a href="" class="red">抑郁症</a></dd>
+                                        <dd><a href="">癫痫</a></dd>
+                                        <dd><a href="">帕金森</a></dd>
+                                        <dd><a href="">精神分裂症</a></dd>
+                                        <dd><a href="">老年痴呆</a></dd>
+                                        <dd><a href="">中风</a></dd>
+                                        <dd><a href="">神经性疼痛</a></dd>
+                                        <dd><a href="">多动症</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">内分泌科</a></dt>
+                                        <dd><a href="" class="red">糖尿病</a></dd>
+                                        <dd><a href="">甲状腺疾病</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="#">风湿骨科</a></dt>
+                                        <dd><a href="#">风湿类风湿</a></dd>
+                                        <dd><a href="#">骨关节炎</a></dd>
+                                        <dd><a href="#">跌打骨伤</a></dd>
+                                        <dd><a href="#">腰椎病</a></dd>
+                                        <dd><a href="#">骨质疏松</a></dd>
+                                        <dd><a href="#">通风</a></dd>
+                                        <dd><a href="#">外用贴膏</a></dd>
+                                        <dd><a href="#">器官移植</a></dd>
+                                        <dd><a href="#">骨质增生</a></dd>
+                                        <dd><a href="#">股骨头坏死</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">皮肤病</a></dt>
+                                        <dd><a href="#">皮炎廯症</a></dd>
+                                        <dd><a href="#">脱发</a></dd>
+                                        <dd><a href="#">银屑病</a></dd>
+                                        <dd><a href="#">痤疮</a></dd>
+                                        <dd><a href="#">白癜风</a></dd>
+                                        <dd><a href="#">尖锐湿疣</a></dd>
+                                        <dd><a href="#">黄褐斑</a></dd>
+                                        <dd><a href="#">疤痕</a></dd>
+                                        <dd><a href="#">灰指甲</a></dd>
+                                        <dd><a href="#">疱疹</a></dd>
+                                        <dd><a href="#">烧烫创伤</a></dd>
+                                        <dd><a href="#">过敏</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">呼吸道疾病</a></dt>
+                                        <dd><a href="#">感冒发烧</a></dd>
+                                        <dd><a href="#">咳嗽</a></dd>
+                                        <dd><a href="#">上火</a></dd>
+                                        <dd><a href="#">小儿感冒</a></dd>
+                                        <dd><a href="#">哮喘</a></dd>
+                                        <dd><a href="#">支气管炎</a></dd>
+                                        <dd><a href="#">慢性阻塞性肺疾病</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">肝病科</a></dt>
+                                        <dd><a href="#">乙肝</a></dd>
+                                        <dd><a href="#">保肝护肝</a></dd>
+                                        <dd><a href="#">胆结石</a></dd>
+                                        <dd><a href="#">免疫调节</a></dd>
+                                        <dd><a href="#">肝纤维化肝硬化</a></dd>
+                                        <dd><a href="#">胆道疾病</a></dd>
+                                        <dd><a href="#">脂肪肝</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="#">消化系统疾病</a></dt>
+                                        <dd><a href="#">胃炎</a></dd>
+                                        <dd><a href="#">胃肠溃烂</a></dd>
+                                        <dd><a href="#">结肠炎</a></dd>
+                                        <dd><a href="#">消化不良</a></dd>
+                                        <dd><a href="#">便秘</a></dd>
+                                        <dd><a href="#">腹泻</a></dd>
+                                        <dd><a href="#">痔疮</a></dd>
+                                        <dd><a href="#">小儿肠胃病</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">五官科疾病</a></dt>
+                                        <dd><a href="#">鼻炎</a></dd>
+                                        <dd><a href="#">咽喉炎</a></dd>
+                                        <dd><a href="#">眼干眼涩</a></dd>
+                                        <dd><a href="#">眼部炎症</a></dd>
+                                        <dd><a href="#">白内障</a></dd>
+                                        <dd><a href="#">青光眼</a></dd>
+                                        <dd><a href="#">耳聋耳鸣</a></dd>
+                                        <dd><a href="#">口腔溃疡</a></dd>
+                                        <dd><a href="#">牙周疼痛</a></dd>
+                                        <dd><a href="#">视网膜病变</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">妇科疾病</a></dt>
+                                        <dd><a href="#">阴道炎</a></dd>
+                                        <dd><a href="#">月经不调</a></dd>
+                                        <dd><a href="#">避孕</a></dd>
+                                        <dd><a href="#">保胎促孕</a></dd>
+                                        <dd><a href="#">更年期</a></dd>
+                                        <dd><a href="#">子宫疾病</a></dd>
+                                        <dd><a href="#">乳腺疾病</a></dd>
+                                        <dd><a href="#">盆腔炎</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">肿瘤科</a></dt>
+                                        <dd><a href="#">肺癌</a></dd>
+                                        <dd><a href="#">肝癌</a></dd>
+                                        <dd><a href="#">胃癌</a></dd>
+                                        <dd><a href="#">食道癌</a></dd>
+                                        <dd><a href="#">淋巴癌</a></dd>
+                                        <dd><a href="#">白血病</a></dd>
+                                        <dd><a href="#">乳腺癌</a></dd>
+                                        <dd><a href="#">化疗提高营养</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <a href="" class="block">
+                                        <img src="../images/baijin10piangangben.jpg" alt="">
+                                    </a>
+                                    <a href="" class="block">
+                                        <img src="../images/mandixiaotu.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="icon icon-naiping"></i>
+                            <span>营养保健</span>
+                            <div class="xiangqing">
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="" class="red">热门推荐</a></dt>
+                                        <dd><a href="">DHA</a></dd>
+                                        <dd><a href="" class="red">减肥</a></dd>
+                                        <dd><a href="">补肾</a></dd>
+                                        <dd><a href="">阿胶</a></dd>
+                                        <dd><a href="">软骨素</a></dd>
+                                        <dd><a href="">益生菌</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">强壮男人</a></dt>
+                                        <dd><a href="" class="red">补肾强身</a></dd>
+                                        <dd><a href="">前列腺养护</a></dd>
+                                        <dd><a href="">解酒护肝</a></dd>
+                                        <dd><a href="">缓解疲劳</a></dd>
+                                        <dd><a href="">增肌强身</a></dd>
+                                        <dd><a href="">番茄红素</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">美丽女人</a></dt>
+                                        <dd><a href="">减肥瘦身</a></dd>
+                                        <dd><a href="">润肠通便</a></dd>
+                                        <dd><a href="">补血补气</a></dd>
+                                        <dd><a href="" class="red">美白祛斑</a></dd>
+                                        <dd><a href="">调经养颜</a></dd>
+                                        <dd><a href="">酵素</a></dd>
+                                        <dd><a href="">左旋肉碱</a></dd>
+                                        <dd><a href="">葡萄籽</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">健康老人</a></dt>
+                                        <dd><a href="">增强免疫</a></dd>
+                                        <dd><a href="" class="red">降低血脂</a></dd>
+                                        <dd><a href="">降低血糖</a></dd>
+                                        <dd><a href="">调节血压</a></dd>
+                                        <dd><a href="">保护骨骼</a></dd>
+                                        <dd><a href="">调节睡眠</a></dd>
+                                        <dd><a href="">调节肠胃</a></dd>
+                                        <dd><a href="">鱼油</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">妇婴保健</a></dt>
+                                        <dd><a href="" class="red">DHA</a></dd>
+                                        <dd><a href="">鱼肝油</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="#">职场保健</a></dt>
+                                        <dd><a href="#" class="red">缓解疲劳</a></dd>
+                                        <dd><a href="#">改善睡眠</a></dd>
+                                        <dd><a href="#">增强免疫</a></dd>
+                                        <dd><a href="#">保护视力</a></dd>
+                                        <dd><a href="#">调理肠胃</a></dd>
+                                        <dd><a href="#">蛋白粉</a></dd>
+                                        <dd><a href="#">西洋参</a></dd>
+                                        <dd><a href="#">叶黄素</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">营养礼盒</a></dt>
+                                        <dd><a href="#" class="red">蛋白粉</a></dd>
+                                        <dd><a href="#">氨基酸</a></dd>
+                                        <dd><a href="#">螺旋藻</a></dd>
+                                        <dd><a href="#">灵芝孢子</a></dd>
+                                        <dd><a href="#">脑白金</a></dd>
+                                        <dd><a href="#">昂立多邦</a></dd>
+                                        <dd><a href="#">太太口服液</a></dd>
+                                        <dd><a href="#">生命一号</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">热门品牌</a></dt>
+                                        <dd><a href="#" class="red">汤臣倍健</a></dd>
+                                        <dd><a href="#">碧生源</a></dd>
+                                        <dd><a href="#">修正</a></dd>
+                                        <dd><a href="#">同仁堂</a></dd>
+                                        <dd><a href="#">姿美堂</a></dd>
+                                        <dd><a href="#">康恩贝</a></dd>
+                                        <dd><a href="#">纽曼斯</a></dd>
+                                    </dl>
+                                     <dl class="clearfix">
+                                        <dt><a href="#">消化系统疾病</a></dt>
+                                        <dd><a href="#">胃炎</a></dd>
+                                        <dd><a href="#">胃肠溃烂</a></dd>
+                                        <dd><a href="#">结肠炎</a></dd>
+                                        <dd><a href="#">消化不良</a></dd>
+                                        <dd><a href="#">便秘</a></dd>
+                                        <dd><a href="#">腹泻</a></dd>
+                                        <dd><a href="#">痔疮</a></dd>
+                                        <dd><a href="#">小儿肠胃病</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="#">肝病科</a></dt>
+                                        <dd><a href="#">乙肝</a></dd>
+                                        <dd><a href="#">保肝护肝</a></dd>
+                                        <dd><a href="#">胆结石</a></dd>
+                                        <dd><a href="#">免疫调节</a></dd>
+                                        <dd><a href="#">肝纤维化肝硬化</a></dd>
+                                        <dd><a href="#">胆道疾病</a></dd>
+                                        <dd><a href="#">脂肪肝</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">妇科疾病</a></dt>
+                                        <dd><a href="#">阴道炎</a></dd>
+                                        <dd><a href="#">月经不调</a></dd>
+                                        <dd><a href="#">避孕</a></dd>
+                                        <dd><a href="#">保胎促孕</a></dd>
+                                        <dd><a href="#">更年期</a></dd>
+                                        <dd><a href="#">子宫疾病</a></dd>
+                                        <dd><a href="#">乳腺疾病</a></dd>
+                                        <dd><a href="#">盆腔炎</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">肿瘤科</a></dt>
+                                        <dd><a href="#">肺癌</a></dd>
+                                        <dd><a href="#">肝癌</a></dd>
+                                        <dd><a href="#">胃癌</a></dd>
+                                        <dd><a href="#">食道癌</a></dd>
+                                        <dd><a href="#">淋巴癌</a></dd>
+                                        <dd><a href="#">白血病</a></dd>
+                                        <dd><a href="#">乳腺癌</a></dd>
+                                        <dd><a href="#">化疗提高营养</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">五官科疾病</a></dt>
+                                        <dd><a href="#">鼻炎</a></dd>
+                                        <dd><a href="#">咽喉炎</a></dd>
+                                        <dd><a href="#">眼干眼涩</a></dd>
+                                        <dd><a href="#">眼部炎症</a></dd>
+                                        <dd><a href="#">白内障</a></dd>
+                                        <dd><a href="#">青光眼</a></dd>
+                                        <dd><a href="#">耳聋耳鸣</a></dd>
+                                        <dd><a href="#">口腔溃疡</a></dd>
+                                        <dd><a href="#">牙周疼痛</a></dd>
+                                        <dd><a href="#">视网膜病变</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <a href="" class="block">
+                                        <img src="../images/20190107110731.jpg" alt="">
+                                    </a>
+                                    <a href="" class="block">
+                                        <img src="../images/20190107110725.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="icon icon-huluobu"></i>
+                            <span>维生素钙</span>
+                            <div class="xiangqing">
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="" class="red">男科疾病</a></dt>
+                                        <dd><a href="">阳痿早泄</a></dd>
+                                        <dd><a href="">男性不育症</a></dd>
+                                        <dd><a href="">前列腺炎</a></dd>
+                                        <dd><a href="">肾病</a></dd>
+                                        <dd><a href="">泌尿系统疾病</a></dd>
+                                        <dd><a href="">补肾</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">滋补调养</a></dt>
+                                        <dd><a href="">补血补气</a></dd>
+                                        <dd><a href="" class="red">补肾壮阳</a></dd>
+                                        <dd><a href="">减肥瘦身</a></dd>
+                                        <dd><a href="">增强抵抗力</a></dd>
+                                        <dd><a href="">安神助眠</a></dd>
+                                        <dd><a href="">免疫调节</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">心脑血管</a></dt>
+                                        <dd><a href="" class="red">高血压</a></dd>
+                                        <dd><a href="">脑血管病</a></dd>
+                                        <dd><a href="">冠心病</a></dd>
+                                        <dd><a href="">高血脂</a></dd>
+                                        <dd><a href="">心绞痛</a></dd>
+                                        <dd><a href="">静脉曲张</a></dd>
+                                        <dd><a href="">心力衰竭</a></dd>
+                                        <dd><a href="">血液病</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">神经系统</a></dt>
+                                        <dd><a href="" class="red">抑郁症</a></dd>
+                                        <dd><a href="">癫痫</a></dd>
+                                        <dd><a href="">帕金森</a></dd>
+                                        <dd><a href="">精神分裂症</a></dd>
+                                        <dd><a href="">老年痴呆</a></dd>
+                                        <dd><a href="">中风</a></dd>
+                                        <dd><a href="">神经性疼痛</a></dd>
+                                        <dd><a href="">多动症</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">内分泌科</a></dt>
+                                        <dd><a href="" class="red">糖尿病</a></dd>
+                                        <dd><a href="">甲状腺疾病</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="#">风湿骨科</a></dt>
+                                        <dd><a href="#">风湿类风湿</a></dd>
+                                        <dd><a href="#">骨关节炎</a></dd>
+                                        <dd><a href="#">跌打骨伤</a></dd>
+                                        <dd><a href="#">腰椎病</a></dd>
+                                        <dd><a href="#">骨质疏松</a></dd>
+                                        <dd><a href="#">通风</a></dd>
+                                        <dd><a href="#">外用贴膏</a></dd>
+                                        <dd><a href="#">器官移植</a></dd>
+                                        <dd><a href="#">骨质增生</a></dd>
+                                        <dd><a href="#">股骨头坏死</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">皮肤病</a></dt>
+                                        <dd><a href="#">皮炎廯症</a></dd>
+                                        <dd><a href="#">脱发</a></dd>
+                                        <dd><a href="#">银屑病</a></dd>
+                                        <dd><a href="#">痤疮</a></dd>
+                                        <dd><a href="#">白癜风</a></dd>
+                                        <dd><a href="#">尖锐湿疣</a></dd>
+                                        <dd><a href="#">黄褐斑</a></dd>
+                                        <dd><a href="#">疤痕</a></dd>
+                                        <dd><a href="#">灰指甲</a></dd>
+                                        <dd><a href="#">疱疹</a></dd>
+                                        <dd><a href="#">烧烫创伤</a></dd>
+                                        <dd><a href="#">过敏</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">呼吸道疾病</a></dt>
+                                        <dd><a href="#">感冒发烧</a></dd>
+                                        <dd><a href="#">咳嗽</a></dd>
+                                        <dd><a href="#">上火</a></dd>
+                                        <dd><a href="#">小儿感冒</a></dd>
+                                        <dd><a href="#">哮喘</a></dd>
+                                        <dd><a href="#">支气管炎</a></dd>
+                                        <dd><a href="#">慢性阻塞性肺疾病</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">肝病科</a></dt>
+                                        <dd><a href="#">乙肝</a></dd>
+                                        <dd><a href="#">保肝护肝</a></dd>
+                                        <dd><a href="#">胆结石</a></dd>
+                                        <dd><a href="#">免疫调节</a></dd>
+                                        <dd><a href="#">肝纤维化肝硬化</a></dd>
+                                        <dd><a href="#">胆道疾病</a></dd>
+                                        <dd><a href="#">脂肪肝</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="#">消化系统疾病</a></dt>
+                                        <dd><a href="#">胃炎</a></dd>
+                                        <dd><a href="#">胃肠溃烂</a></dd>
+                                        <dd><a href="#">结肠炎</a></dd>
+                                        <dd><a href="#">消化不良</a></dd>
+                                        <dd><a href="#">便秘</a></dd>
+                                        <dd><a href="#">腹泻</a></dd>
+                                        <dd><a href="#">痔疮</a></dd>
+                                        <dd><a href="#">小儿肠胃病</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">五官科疾病</a></dt>
+                                        <dd><a href="#">鼻炎</a></dd>
+                                        <dd><a href="#">咽喉炎</a></dd>
+                                        <dd><a href="#">眼干眼涩</a></dd>
+                                        <dd><a href="#">眼部炎症</a></dd>
+                                        <dd><a href="#">白内障</a></dd>
+                                        <dd><a href="#">青光眼</a></dd>
+                                        <dd><a href="#">耳聋耳鸣</a></dd>
+                                        <dd><a href="#">口腔溃疡</a></dd>
+                                        <dd><a href="#">牙周疼痛</a></dd>
+                                        <dd><a href="#">视网膜病变</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">妇科疾病</a></dt>
+                                        <dd><a href="#">阴道炎</a></dd>
+                                        <dd><a href="#">月经不调</a></dd>
+                                        <dd><a href="#">避孕</a></dd>
+                                        <dd><a href="#">保胎促孕</a></dd>
+                                        <dd><a href="#">更年期</a></dd>
+                                        <dd><a href="#">子宫疾病</a></dd>
+                                        <dd><a href="#">乳腺疾病</a></dd>
+                                        <dd><a href="#">盆腔炎</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">肿瘤科</a></dt>
+                                        <dd><a href="#">肺癌</a></dd>
+                                        <dd><a href="#">肝癌</a></dd>
+                                        <dd><a href="#">胃癌</a></dd>
+                                        <dd><a href="#">食道癌</a></dd>
+                                        <dd><a href="#">淋巴癌</a></dd>
+                                        <dd><a href="#">白血病</a></dd>
+                                        <dd><a href="#">乳腺癌</a></dd>
+                                        <dd><a href="#">化疗提高营养</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <a href="" class="block">
+                                        <img src="../images/4567.jpg" alt="">
+                                    </a>
+                                    <a href="" class="block">
+                                        <img src="../images/99999999999999999999999999999999999.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="icon icon-eye"></i>
+                            <span>隐形眼镜</span>
+                            <div class="xiangqing">
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="" class="red">热门推荐</a></dt>
+                                        <dd><a href="">DHA</a></dd>
+                                        <dd><a href="" class="red">减肥</a></dd>
+                                        <dd><a href="">补肾</a></dd>
+                                        <dd><a href="">阿胶</a></dd>
+                                        <dd><a href="">软骨素</a></dd>
+                                        <dd><a href="">益生菌</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">强壮男人</a></dt>
+                                        <dd><a href="" class="red">补肾强身</a></dd>
+                                        <dd><a href="">前列腺养护</a></dd>
+                                        <dd><a href="">解酒护肝</a></dd>
+                                        <dd><a href="">缓解疲劳</a></dd>
+                                        <dd><a href="">增肌强身</a></dd>
+                                        <dd><a href="">番茄红素</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">美丽女人</a></dt>
+                                        <dd><a href="">减肥瘦身</a></dd>
+                                        <dd><a href="">润肠通便</a></dd>
+                                        <dd><a href="">补血补气</a></dd>
+                                        <dd><a href="" class="red">美白祛斑</a></dd>
+                                        <dd><a href="">调经养颜</a></dd>
+                                        <dd><a href="">酵素</a></dd>
+                                        <dd><a href="">左旋肉碱</a></dd>
+                                        <dd><a href="">葡萄籽</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">健康老人</a></dt>
+                                        <dd><a href="">增强免疫</a></dd>
+                                        <dd><a href="" class="red">降低血脂</a></dd>
+                                        <dd><a href="">降低血糖</a></dd>
+                                        <dd><a href="">调节血压</a></dd>
+                                        <dd><a href="">保护骨骼</a></dd>
+                                        <dd><a href="">调节睡眠</a></dd>
+                                        <dd><a href="">调节肠胃</a></dd>
+                                        <dd><a href="">鱼油</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">妇婴保健</a></dt>
+                                        <dd><a href="" class="red">DHA</a></dd>
+                                        <dd><a href="">鱼肝油</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="#">职场保健</a></dt>
+                                        <dd><a href="#" class="red">缓解疲劳</a></dd>
+                                        <dd><a href="#">改善睡眠</a></dd>
+                                        <dd><a href="#">增强免疫</a></dd>
+                                        <dd><a href="#">保护视力</a></dd>
+                                        <dd><a href="#">调理肠胃</a></dd>
+                                        <dd><a href="#">蛋白粉</a></dd>
+                                        <dd><a href="#">西洋参</a></dd>
+                                        <dd><a href="#">叶黄素</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">营养礼盒</a></dt>
+                                        <dd><a href="#" class="red">蛋白粉</a></dd>
+                                        <dd><a href="#">氨基酸</a></dd>
+                                        <dd><a href="#">螺旋藻</a></dd>
+                                        <dd><a href="#">灵芝孢子</a></dd>
+                                        <dd><a href="#">脑白金</a></dd>
+                                        <dd><a href="#">昂立多邦</a></dd>
+                                        <dd><a href="#">太太口服液</a></dd>
+                                        <dd><a href="#">生命一号</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">热门品牌</a></dt>
+                                        <dd><a href="#" class="red">汤臣倍健</a></dd>
+                                        <dd><a href="#">碧生源</a></dd>
+                                        <dd><a href="#">修正</a></dd>
+                                        <dd><a href="#">同仁堂</a></dd>
+                                        <dd><a href="#">姿美堂</a></dd>
+                                        <dd><a href="#">康恩贝</a></dd>
+                                        <dd><a href="#">纽曼斯</a></dd>
+                                    </dl>
+                                     <dl class="clearfix">
+                                        <dt><a href="#">消化系统疾病</a></dt>
+                                        <dd><a href="#">胃炎</a></dd>
+                                        <dd><a href="#">胃肠溃烂</a></dd>
+                                        <dd><a href="#">结肠炎</a></dd>
+                                        <dd><a href="#">消化不良</a></dd>
+                                        <dd><a href="#">便秘</a></dd>
+                                        <dd><a href="#">腹泻</a></dd>
+                                        <dd><a href="#">痔疮</a></dd>
+                                        <dd><a href="#">小儿肠胃病</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="#">肝病科</a></dt>
+                                        <dd><a href="#">乙肝</a></dd>
+                                        <dd><a href="#">保肝护肝</a></dd>
+                                        <dd><a href="#">胆结石</a></dd>
+                                        <dd><a href="#">免疫调节</a></dd>
+                                        <dd><a href="#">肝纤维化肝硬化</a></dd>
+                                        <dd><a href="#">胆道疾病</a></dd>
+                                        <dd><a href="#">脂肪肝</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">妇科疾病</a></dt>
+                                        <dd><a href="#">阴道炎</a></dd>
+                                        <dd><a href="#">月经不调</a></dd>
+                                        <dd><a href="#">避孕</a></dd>
+                                        <dd><a href="#">保胎促孕</a></dd>
+                                        <dd><a href="#">更年期</a></dd>
+                                        <dd><a href="#">子宫疾病</a></dd>
+                                        <dd><a href="#">乳腺疾病</a></dd>
+                                        <dd><a href="#">盆腔炎</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">肿瘤科</a></dt>
+                                        <dd><a href="#">肺癌</a></dd>
+                                        <dd><a href="#">肝癌</a></dd>
+                                        <dd><a href="#">胃癌</a></dd>
+                                        <dd><a href="#">食道癌</a></dd>
+                                        <dd><a href="#">淋巴癌</a></dd>
+                                        <dd><a href="#">白血病</a></dd>
+                                        <dd><a href="#">乳腺癌</a></dd>
+                                        <dd><a href="#">化疗提高营养</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">五官科疾病</a></dt>
+                                        <dd><a href="#">鼻炎</a></dd>
+                                        <dd><a href="#">咽喉炎</a></dd>
+                                        <dd><a href="#">眼干眼涩</a></dd>
+                                        <dd><a href="#">眼部炎症</a></dd>
+                                        <dd><a href="#">白内障</a></dd>
+                                        <dd><a href="#">青光眼</a></dd>
+                                        <dd><a href="#">耳聋耳鸣</a></dd>
+                                        <dd><a href="#">口腔溃疡</a></dd>
+                                        <dd><a href="#">牙周疼痛</a></dd>
+                                        <dd><a href="#">视网膜病变</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <a href="" class="block">
+                                        <img src="../images/253x201(4).jpg" alt="">
+                                    </a>
+                                    <a href="" class="block">
+                                        <img src="../images/253x201(5).jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="icon icon-iconset0480"></i>
+                            <span>医疗器械、健康电器</span>
+                            <div class="xiangqing">
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="" class="red">男科疾病</a></dt>
+                                        <dd><a href="">阳痿早泄</a></dd>
+                                        <dd><a href="">男性不育症</a></dd>
+                                        <dd><a href="">前列腺炎</a></dd>
+                                        <dd><a href="">肾病</a></dd>
+                                        <dd><a href="">泌尿系统疾病</a></dd>
+                                        <dd><a href="">补肾</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">滋补调养</a></dt>
+                                        <dd><a href="">补血补气</a></dd>
+                                        <dd><a href="" class="red">补肾壮阳</a></dd>
+                                        <dd><a href="">减肥瘦身</a></dd>
+                                        <dd><a href="">增强抵抗力</a></dd>
+                                        <dd><a href="">安神助眠</a></dd>
+                                        <dd><a href="">免疫调节</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">心脑血管</a></dt>
+                                        <dd><a href="" class="red">高血压</a></dd>
+                                        <dd><a href="">脑血管病</a></dd>
+                                        <dd><a href="">冠心病</a></dd>
+                                        <dd><a href="">高血脂</a></dd>
+                                        <dd><a href="">心绞痛</a></dd>
+                                        <dd><a href="">静脉曲张</a></dd>
+                                        <dd><a href="">心力衰竭</a></dd>
+                                        <dd><a href="">血液病</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">神经系统</a></dt>
+                                        <dd><a href="" class="red">抑郁症</a></dd>
+                                        <dd><a href="">癫痫</a></dd>
+                                        <dd><a href="">帕金森</a></dd>
+                                        <dd><a href="">精神分裂症</a></dd>
+                                        <dd><a href="">老年痴呆</a></dd>
+                                        <dd><a href="">中风</a></dd>
+                                        <dd><a href="">神经性疼痛</a></dd>
+                                        <dd><a href="">多动症</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">内分泌科</a></dt>
+                                        <dd><a href="" class="red">糖尿病</a></dd>
+                                        <dd><a href="">甲状腺疾病</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="#">风湿骨科</a></dt>
+                                        <dd><a href="#">风湿类风湿</a></dd>
+                                        <dd><a href="#">骨关节炎</a></dd>
+                                        <dd><a href="#">跌打骨伤</a></dd>
+                                        <dd><a href="#">腰椎病</a></dd>
+                                        <dd><a href="#">骨质疏松</a></dd>
+                                        <dd><a href="#">通风</a></dd>
+                                        <dd><a href="#">外用贴膏</a></dd>
+                                        <dd><a href="#">器官移植</a></dd>
+                                        <dd><a href="#">骨质增生</a></dd>
+                                        <dd><a href="#">股骨头坏死</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">皮肤病</a></dt>
+                                        <dd><a href="#">皮炎廯症</a></dd>
+                                        <dd><a href="#">脱发</a></dd>
+                                        <dd><a href="#">银屑病</a></dd>
+                                        <dd><a href="#">痤疮</a></dd>
+                                        <dd><a href="#">白癜风</a></dd>
+                                        <dd><a href="#">尖锐湿疣</a></dd>
+                                        <dd><a href="#">黄褐斑</a></dd>
+                                        <dd><a href="#">疤痕</a></dd>
+                                        <dd><a href="#">灰指甲</a></dd>
+                                        <dd><a href="#">疱疹</a></dd>
+                                        <dd><a href="#">烧烫创伤</a></dd>
+                                        <dd><a href="#">过敏</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">呼吸道疾病</a></dt>
+                                        <dd><a href="#">感冒发烧</a></dd>
+                                        <dd><a href="#">咳嗽</a></dd>
+                                        <dd><a href="#">上火</a></dd>
+                                        <dd><a href="#">小儿感冒</a></dd>
+                                        <dd><a href="#">哮喘</a></dd>
+                                        <dd><a href="#">支气管炎</a></dd>
+                                        <dd><a href="#">慢性阻塞性肺疾病</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">肝病科</a></dt>
+                                        <dd><a href="#">乙肝</a></dd>
+                                        <dd><a href="#">保肝护肝</a></dd>
+                                        <dd><a href="#">胆结石</a></dd>
+                                        <dd><a href="#">免疫调节</a></dd>
+                                        <dd><a href="#">肝纤维化肝硬化</a></dd>
+                                        <dd><a href="#">胆道疾病</a></dd>
+                                        <dd><a href="#">脂肪肝</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="#">消化系统疾病</a></dt>
+                                        <dd><a href="#">胃炎</a></dd>
+                                        <dd><a href="#">胃肠溃烂</a></dd>
+                                        <dd><a href="#">结肠炎</a></dd>
+                                        <dd><a href="#">消化不良</a></dd>
+                                        <dd><a href="#">便秘</a></dd>
+                                        <dd><a href="#">腹泻</a></dd>
+                                        <dd><a href="#">痔疮</a></dd>
+                                        <dd><a href="#">小儿肠胃病</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">五官科疾病</a></dt>
+                                        <dd><a href="#">鼻炎</a></dd>
+                                        <dd><a href="#">咽喉炎</a></dd>
+                                        <dd><a href="#">眼干眼涩</a></dd>
+                                        <dd><a href="#">眼部炎症</a></dd>
+                                        <dd><a href="#">白内障</a></dd>
+                                        <dd><a href="#">青光眼</a></dd>
+                                        <dd><a href="#">耳聋耳鸣</a></dd>
+                                        <dd><a href="#">口腔溃疡</a></dd>
+                                        <dd><a href="#">牙周疼痛</a></dd>
+                                        <dd><a href="#">视网膜病变</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">妇科疾病</a></dt>
+                                        <dd><a href="#">阴道炎</a></dd>
+                                        <dd><a href="#">月经不调</a></dd>
+                                        <dd><a href="#">避孕</a></dd>
+                                        <dd><a href="#">保胎促孕</a></dd>
+                                        <dd><a href="#">更年期</a></dd>
+                                        <dd><a href="#">子宫疾病</a></dd>
+                                        <dd><a href="#">乳腺疾病</a></dd>
+                                        <dd><a href="#">盆腔炎</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">肿瘤科</a></dt>
+                                        <dd><a href="#">肺癌</a></dd>
+                                        <dd><a href="#">肝癌</a></dd>
+                                        <dd><a href="#">胃癌</a></dd>
+                                        <dd><a href="#">食道癌</a></dd>
+                                        <dd><a href="#">淋巴癌</a></dd>
+                                        <dd><a href="#">白血病</a></dd>
+                                        <dd><a href="#">乳腺癌</a></dd>
+                                        <dd><a href="#">化疗提高营养</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <a href="" class="block">
+                                        <img src="../images/20171024190311513.jpg" alt="">
+                                    </a>
+                                    <a href="" class="block">
+                                        <img src="../images/20171024192612436.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="icon icon-ximiannai"></i>
+                            <span>美妆个护</span>
+                            <div class="xiangqing">
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="" class="red">热门推荐</a></dt>
+                                        <dd><a href="">DHA</a></dd>
+                                        <dd><a href="" class="red">减肥</a></dd>
+                                        <dd><a href="">补肾</a></dd>
+                                        <dd><a href="">阿胶</a></dd>
+                                        <dd><a href="">软骨素</a></dd>
+                                        <dd><a href="">益生菌</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">强壮男人</a></dt>
+                                        <dd><a href="" class="red">补肾强身</a></dd>
+                                        <dd><a href="">前列腺养护</a></dd>
+                                        <dd><a href="">解酒护肝</a></dd>
+                                        <dd><a href="">缓解疲劳</a></dd>
+                                        <dd><a href="">增肌强身</a></dd>
+                                        <dd><a href="">番茄红素</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">美丽女人</a></dt>
+                                        <dd><a href="">减肥瘦身</a></dd>
+                                        <dd><a href="">润肠通便</a></dd>
+                                        <dd><a href="">补血补气</a></dd>
+                                        <dd><a href="" class="red">美白祛斑</a></dd>
+                                        <dd><a href="">调经养颜</a></dd>
+                                        <dd><a href="">酵素</a></dd>
+                                        <dd><a href="">左旋肉碱</a></dd>
+                                        <dd><a href="">葡萄籽</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">健康老人</a></dt>
+                                        <dd><a href="">增强免疫</a></dd>
+                                        <dd><a href="" class="red">降低血脂</a></dd>
+                                        <dd><a href="">降低血糖</a></dd>
+                                        <dd><a href="">调节血压</a></dd>
+                                        <dd><a href="">保护骨骼</a></dd>
+                                        <dd><a href="">调节睡眠</a></dd>
+                                        <dd><a href="">调节肠胃</a></dd>
+                                        <dd><a href="">鱼油</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">妇婴保健</a></dt>
+                                        <dd><a href="" class="red">DHA</a></dd>
+                                        <dd><a href="">鱼肝油</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="#">职场保健</a></dt>
+                                        <dd><a href="#" class="red">缓解疲劳</a></dd>
+                                        <dd><a href="#">改善睡眠</a></dd>
+                                        <dd><a href="#">增强免疫</a></dd>
+                                        <dd><a href="#">保护视力</a></dd>
+                                        <dd><a href="#">调理肠胃</a></dd>
+                                        <dd><a href="#">蛋白粉</a></dd>
+                                        <dd><a href="#">西洋参</a></dd>
+                                        <dd><a href="#">叶黄素</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">营养礼盒</a></dt>
+                                        <dd><a href="#" class="red">蛋白粉</a></dd>
+                                        <dd><a href="#">氨基酸</a></dd>
+                                        <dd><a href="#">螺旋藻</a></dd>
+                                        <dd><a href="#">灵芝孢子</a></dd>
+                                        <dd><a href="#">脑白金</a></dd>
+                                        <dd><a href="#">昂立多邦</a></dd>
+                                        <dd><a href="#">太太口服液</a></dd>
+                                        <dd><a href="#">生命一号</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">热门品牌</a></dt>
+                                        <dd><a href="#" class="red">汤臣倍健</a></dd>
+                                        <dd><a href="#">碧生源</a></dd>
+                                        <dd><a href="#">修正</a></dd>
+                                        <dd><a href="#">同仁堂</a></dd>
+                                        <dd><a href="#">姿美堂</a></dd>
+                                        <dd><a href="#">康恩贝</a></dd>
+                                        <dd><a href="#">纽曼斯</a></dd>
+                                    </dl>
+                                     <dl class="clearfix">
+                                        <dt><a href="#">消化系统疾病</a></dt>
+                                        <dd><a href="#">胃炎</a></dd>
+                                        <dd><a href="#">胃肠溃烂</a></dd>
+                                        <dd><a href="#">结肠炎</a></dd>
+                                        <dd><a href="#">消化不良</a></dd>
+                                        <dd><a href="#">便秘</a></dd>
+                                        <dd><a href="#">腹泻</a></dd>
+                                        <dd><a href="#">痔疮</a></dd>
+                                        <dd><a href="#">小儿肠胃病</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="#">肝病科</a></dt>
+                                        <dd><a href="#">乙肝</a></dd>
+                                        <dd><a href="#">保肝护肝</a></dd>
+                                        <dd><a href="#">胆结石</a></dd>
+                                        <dd><a href="#">免疫调节</a></dd>
+                                        <dd><a href="#">肝纤维化肝硬化</a></dd>
+                                        <dd><a href="#">胆道疾病</a></dd>
+                                        <dd><a href="#">脂肪肝</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">妇科疾病</a></dt>
+                                        <dd><a href="#">阴道炎</a></dd>
+                                        <dd><a href="#">月经不调</a></dd>
+                                        <dd><a href="#">避孕</a></dd>
+                                        <dd><a href="#">保胎促孕</a></dd>
+                                        <dd><a href="#">更年期</a></dd>
+                                        <dd><a href="#">子宫疾病</a></dd>
+                                        <dd><a href="#">乳腺疾病</a></dd>
+                                        <dd><a href="#">盆腔炎</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">肿瘤科</a></dt>
+                                        <dd><a href="#">肺癌</a></dd>
+                                        <dd><a href="#">肝癌</a></dd>
+                                        <dd><a href="#">胃癌</a></dd>
+                                        <dd><a href="#">食道癌</a></dd>
+                                        <dd><a href="#">淋巴癌</a></dd>
+                                        <dd><a href="#">白血病</a></dd>
+                                        <dd><a href="#">乳腺癌</a></dd>
+                                        <dd><a href="#">化疗提高营养</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">五官科疾病</a></dt>
+                                        <dd><a href="#">鼻炎</a></dd>
+                                        <dd><a href="#">咽喉炎</a></dd>
+                                        <dd><a href="#">眼干眼涩</a></dd>
+                                        <dd><a href="#">眼部炎症</a></dd>
+                                        <dd><a href="#">白内障</a></dd>
+                                        <dd><a href="#">青光眼</a></dd>
+                                        <dd><a href="#">耳聋耳鸣</a></dd>
+                                        <dd><a href="#">口腔溃疡</a></dd>
+                                        <dd><a href="#">牙周疼痛</a></dd>
+                                        <dd><a href="#">视网膜病变</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <a href="" class="block">
+                                        <img src="../images/16020310620213.jpg" alt="">
+                                    </a>
+                                    <a href="" class="block">
+                                        <img src="../images/1111111.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="icon icon-biyuntao"></i>
+                            <span>成人用品</span>
+                            <div class="xiangqing">
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="" class="red">男科疾病</a></dt>
+                                        <dd><a href="">阳痿早泄</a></dd>
+                                        <dd><a href="">男性不育症</a></dd>
+                                        <dd><a href="">前列腺炎</a></dd>
+                                        <dd><a href="">肾病</a></dd>
+                                        <dd><a href="">泌尿系统疾病</a></dd>
+                                        <dd><a href="">补肾</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">滋补调养</a></dt>
+                                        <dd><a href="">补血补气</a></dd>
+                                        <dd><a href="" class="red">补肾壮阳</a></dd>
+                                        <dd><a href="">减肥瘦身</a></dd>
+                                        <dd><a href="">增强抵抗力</a></dd>
+                                        <dd><a href="">安神助眠</a></dd>
+                                        <dd><a href="">免疫调节</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">心脑血管</a></dt>
+                                        <dd><a href="" class="red">高血压</a></dd>
+                                        <dd><a href="">脑血管病</a></dd>
+                                        <dd><a href="">冠心病</a></dd>
+                                        <dd><a href="">高血脂</a></dd>
+                                        <dd><a href="">心绞痛</a></dd>
+                                        <dd><a href="">静脉曲张</a></dd>
+                                        <dd><a href="">心力衰竭</a></dd>
+                                        <dd><a href="">血液病</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">神经系统</a></dt>
+                                        <dd><a href="" class="red">抑郁症</a></dd>
+                                        <dd><a href="">癫痫</a></dd>
+                                        <dd><a href="">帕金森</a></dd>
+                                        <dd><a href="">精神分裂症</a></dd>
+                                        <dd><a href="">老年痴呆</a></dd>
+                                        <dd><a href="">中风</a></dd>
+                                        <dd><a href="">神经性疼痛</a></dd>
+                                        <dd><a href="">多动症</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">内分泌科</a></dt>
+                                        <dd><a href="" class="red">糖尿病</a></dd>
+                                        <dd><a href="">甲状腺疾病</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="#">风湿骨科</a></dt>
+                                        <dd><a href="#">风湿类风湿</a></dd>
+                                        <dd><a href="#">骨关节炎</a></dd>
+                                        <dd><a href="#">跌打骨伤</a></dd>
+                                        <dd><a href="#">腰椎病</a></dd>
+                                        <dd><a href="#">骨质疏松</a></dd>
+                                        <dd><a href="#">通风</a></dd>
+                                        <dd><a href="#">外用贴膏</a></dd>
+                                        <dd><a href="#">器官移植</a></dd>
+                                        <dd><a href="#">骨质增生</a></dd>
+                                        <dd><a href="#">股骨头坏死</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">皮肤病</a></dt>
+                                        <dd><a href="#">皮炎廯症</a></dd>
+                                        <dd><a href="#">脱发</a></dd>
+                                        <dd><a href="#">银屑病</a></dd>
+                                        <dd><a href="#">痤疮</a></dd>
+                                        <dd><a href="#">白癜风</a></dd>
+                                        <dd><a href="#">尖锐湿疣</a></dd>
+                                        <dd><a href="#">黄褐斑</a></dd>
+                                        <dd><a href="#">疤痕</a></dd>
+                                        <dd><a href="#">灰指甲</a></dd>
+                                        <dd><a href="#">疱疹</a></dd>
+                                        <dd><a href="#">烧烫创伤</a></dd>
+                                        <dd><a href="#">过敏</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">呼吸道疾病</a></dt>
+                                        <dd><a href="#">感冒发烧</a></dd>
+                                        <dd><a href="#">咳嗽</a></dd>
+                                        <dd><a href="#">上火</a></dd>
+                                        <dd><a href="#">小儿感冒</a></dd>
+                                        <dd><a href="#">哮喘</a></dd>
+                                        <dd><a href="#">支气管炎</a></dd>
+                                        <dd><a href="#">慢性阻塞性肺疾病</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">肝病科</a></dt>
+                                        <dd><a href="#">乙肝</a></dd>
+                                        <dd><a href="#">保肝护肝</a></dd>
+                                        <dd><a href="#">胆结石</a></dd>
+                                        <dd><a href="#">免疫调节</a></dd>
+                                        <dd><a href="#">肝纤维化肝硬化</a></dd>
+                                        <dd><a href="#">胆道疾病</a></dd>
+                                        <dd><a href="#">脂肪肝</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="#">消化系统疾病</a></dt>
+                                        <dd><a href="#">胃炎</a></dd>
+                                        <dd><a href="#">胃肠溃烂</a></dd>
+                                        <dd><a href="#">结肠炎</a></dd>
+                                        <dd><a href="#">消化不良</a></dd>
+                                        <dd><a href="#">便秘</a></dd>
+                                        <dd><a href="#">腹泻</a></dd>
+                                        <dd><a href="#">痔疮</a></dd>
+                                        <dd><a href="#">小儿肠胃病</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">五官科疾病</a></dt>
+                                        <dd><a href="#">鼻炎</a></dd>
+                                        <dd><a href="#">咽喉炎</a></dd>
+                                        <dd><a href="#">眼干眼涩</a></dd>
+                                        <dd><a href="#">眼部炎症</a></dd>
+                                        <dd><a href="#">白内障</a></dd>
+                                        <dd><a href="#">青光眼</a></dd>
+                                        <dd><a href="#">耳聋耳鸣</a></dd>
+                                        <dd><a href="#">口腔溃疡</a></dd>
+                                        <dd><a href="#">牙周疼痛</a></dd>
+                                        <dd><a href="#">视网膜病变</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">妇科疾病</a></dt>
+                                        <dd><a href="#">阴道炎</a></dd>
+                                        <dd><a href="#">月经不调</a></dd>
+                                        <dd><a href="#">避孕</a></dd>
+                                        <dd><a href="#">保胎促孕</a></dd>
+                                        <dd><a href="#">更年期</a></dd>
+                                        <dd><a href="#">子宫疾病</a></dd>
+                                        <dd><a href="#">乳腺疾病</a></dd>
+                                        <dd><a href="#">盆腔炎</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">肿瘤科</a></dt>
+                                        <dd><a href="#">肺癌</a></dd>
+                                        <dd><a href="#">肝癌</a></dd>
+                                        <dd><a href="#">胃癌</a></dd>
+                                        <dd><a href="#">食道癌</a></dd>
+                                        <dd><a href="#">淋巴癌</a></dd>
+                                        <dd><a href="#">白血病</a></dd>
+                                        <dd><a href="#">乳腺癌</a></dd>
+                                        <dd><a href="#">化疗提高营养</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <a href="" class="block">
+                                        <img src="../images/253x201-duleisi0929.jpg" alt="">
+                                    </a>
+                                    <a href="" class="block">
+                                        <img src="../images/253x201-dawei0929.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="icon icon-yinger"></i>
+                            <span>母婴专区</span>
+                            <div class="xiangqing">
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="" class="red">热门推荐</a></dt>
+                                        <dd><a href="">DHA</a></dd>
+                                        <dd><a href="" class="red">减肥</a></dd>
+                                        <dd><a href="">补肾</a></dd>
+                                        <dd><a href="">阿胶</a></dd>
+                                        <dd><a href="">软骨素</a></dd>
+                                        <dd><a href="">益生菌</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">强壮男人</a></dt>
+                                        <dd><a href="" class="red">补肾强身</a></dd>
+                                        <dd><a href="">前列腺养护</a></dd>
+                                        <dd><a href="">解酒护肝</a></dd>
+                                        <dd><a href="">缓解疲劳</a></dd>
+                                        <dd><a href="">增肌强身</a></dd>
+                                        <dd><a href="">番茄红素</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">美丽女人</a></dt>
+                                        <dd><a href="">减肥瘦身</a></dd>
+                                        <dd><a href="">润肠通便</a></dd>
+                                        <dd><a href="">补血补气</a></dd>
+                                        <dd><a href="" class="red">美白祛斑</a></dd>
+                                        <dd><a href="">调经养颜</a></dd>
+                                        <dd><a href="">酵素</a></dd>
+                                        <dd><a href="">左旋肉碱</a></dd>
+                                        <dd><a href="">葡萄籽</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">健康老人</a></dt>
+                                        <dd><a href="">增强免疫</a></dd>
+                                        <dd><a href="" class="red">降低血脂</a></dd>
+                                        <dd><a href="">降低血糖</a></dd>
+                                        <dd><a href="">调节血压</a></dd>
+                                        <dd><a href="">保护骨骼</a></dd>
+                                        <dd><a href="">调节睡眠</a></dd>
+                                        <dd><a href="">调节肠胃</a></dd>
+                                        <dd><a href="">鱼油</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">妇婴保健</a></dt>
+                                        <dd><a href="" class="red">DHA</a></dd>
+                                        <dd><a href="">鱼肝油</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="#">职场保健</a></dt>
+                                        <dd><a href="#" class="red">缓解疲劳</a></dd>
+                                        <dd><a href="#">改善睡眠</a></dd>
+                                        <dd><a href="#">增强免疫</a></dd>
+                                        <dd><a href="#">保护视力</a></dd>
+                                        <dd><a href="#">调理肠胃</a></dd>
+                                        <dd><a href="#">蛋白粉</a></dd>
+                                        <dd><a href="#">西洋参</a></dd>
+                                        <dd><a href="#">叶黄素</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">营养礼盒</a></dt>
+                                        <dd><a href="#" class="red">蛋白粉</a></dd>
+                                        <dd><a href="#">氨基酸</a></dd>
+                                        <dd><a href="#">螺旋藻</a></dd>
+                                        <dd><a href="#">灵芝孢子</a></dd>
+                                        <dd><a href="#">脑白金</a></dd>
+                                        <dd><a href="#">昂立多邦</a></dd>
+                                        <dd><a href="#">太太口服液</a></dd>
+                                        <dd><a href="#">生命一号</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">热门品牌</a></dt>
+                                        <dd><a href="#" class="red">汤臣倍健</a></dd>
+                                        <dd><a href="#">碧生源</a></dd>
+                                        <dd><a href="#">修正</a></dd>
+                                        <dd><a href="#">同仁堂</a></dd>
+                                        <dd><a href="#">姿美堂</a></dd>
+                                        <dd><a href="#">康恩贝</a></dd>
+                                        <dd><a href="#">纽曼斯</a></dd>
+                                    </dl>
+                                     <dl class="clearfix">
+                                        <dt><a href="#">消化系统疾病</a></dt>
+                                        <dd><a href="#">胃炎</a></dd>
+                                        <dd><a href="#">胃肠溃烂</a></dd>
+                                        <dd><a href="#">结肠炎</a></dd>
+                                        <dd><a href="#">消化不良</a></dd>
+                                        <dd><a href="#">便秘</a></dd>
+                                        <dd><a href="#">腹泻</a></dd>
+                                        <dd><a href="#">痔疮</a></dd>
+                                        <dd><a href="#">小儿肠胃病</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="#">肝病科</a></dt>
+                                        <dd><a href="#">乙肝</a></dd>
+                                        <dd><a href="#">保肝护肝</a></dd>
+                                        <dd><a href="#">胆结石</a></dd>
+                                        <dd><a href="#">免疫调节</a></dd>
+                                        <dd><a href="#">肝纤维化肝硬化</a></dd>
+                                        <dd><a href="#">胆道疾病</a></dd>
+                                        <dd><a href="#">脂肪肝</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">妇科疾病</a></dt>
+                                        <dd><a href="#">阴道炎</a></dd>
+                                        <dd><a href="#">月经不调</a></dd>
+                                        <dd><a href="#">避孕</a></dd>
+                                        <dd><a href="#">保胎促孕</a></dd>
+                                        <dd><a href="#">更年期</a></dd>
+                                        <dd><a href="#">子宫疾病</a></dd>
+                                        <dd><a href="#">乳腺疾病</a></dd>
+                                        <dd><a href="#">盆腔炎</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">肿瘤科</a></dt>
+                                        <dd><a href="#">肺癌</a></dd>
+                                        <dd><a href="#">肝癌</a></dd>
+                                        <dd><a href="#">胃癌</a></dd>
+                                        <dd><a href="#">食道癌</a></dd>
+                                        <dd><a href="#">淋巴癌</a></dd>
+                                        <dd><a href="#">白血病</a></dd>
+                                        <dd><a href="#">乳腺癌</a></dd>
+                                        <dd><a href="#">化疗提高营养</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">五官科疾病</a></dt>
+                                        <dd><a href="#">鼻炎</a></dd>
+                                        <dd><a href="#">咽喉炎</a></dd>
+                                        <dd><a href="#">眼干眼涩</a></dd>
+                                        <dd><a href="#">眼部炎症</a></dd>
+                                        <dd><a href="#">白内障</a></dd>
+                                        <dd><a href="#">青光眼</a></dd>
+                                        <dd><a href="#">耳聋耳鸣</a></dd>
+                                        <dd><a href="#">口腔溃疡</a></dd>
+                                        <dd><a href="#">牙周疼痛</a></dd>
+                                        <dd><a href="#">视网膜病变</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <a href="" class="block">
+                                        <img src="../images/YY1029-253x20-5.jpg" alt="">
+                                    </a>
+                                    <a href="" class="block">
+                                        <img src="../images/253x201-9.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="icon icon-rencan"></i>
+                            <span>参茸花茶、休闲零食</span>
+                            <div class="xiangqing">
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="" class="red">男科疾病</a></dt>
+                                        <dd><a href="">阳痿早泄</a></dd>
+                                        <dd><a href="">男性不育症</a></dd>
+                                        <dd><a href="">前列腺炎</a></dd>
+                                        <dd><a href="">肾病</a></dd>
+                                        <dd><a href="">泌尿系统疾病</a></dd>
+                                        <dd><a href="">补肾</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">滋补调养</a></dt>
+                                        <dd><a href="">补血补气</a></dd>
+                                        <dd><a href="" class="red">补肾壮阳</a></dd>
+                                        <dd><a href="">减肥瘦身</a></dd>
+                                        <dd><a href="">增强抵抗力</a></dd>
+                                        <dd><a href="">安神助眠</a></dd>
+                                        <dd><a href="">免疫调节</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">心脑血管</a></dt>
+                                        <dd><a href="" class="red">高血压</a></dd>
+                                        <dd><a href="">脑血管病</a></dd>
+                                        <dd><a href="">冠心病</a></dd>
+                                        <dd><a href="">高血脂</a></dd>
+                                        <dd><a href="">心绞痛</a></dd>
+                                        <dd><a href="">静脉曲张</a></dd>
+                                        <dd><a href="">心力衰竭</a></dd>
+                                        <dd><a href="">血液病</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">神经系统</a></dt>
+                                        <dd><a href="" class="red">抑郁症</a></dd>
+                                        <dd><a href="">癫痫</a></dd>
+                                        <dd><a href="">帕金森</a></dd>
+                                        <dd><a href="">精神分裂症</a></dd>
+                                        <dd><a href="">老年痴呆</a></dd>
+                                        <dd><a href="">中风</a></dd>
+                                        <dd><a href="">神经性疼痛</a></dd>
+                                        <dd><a href="">多动症</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">内分泌科</a></dt>
+                                        <dd><a href="" class="red">糖尿病</a></dd>
+                                        <dd><a href="">甲状腺疾病</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="#">风湿骨科</a></dt>
+                                        <dd><a href="#">风湿类风湿</a></dd>
+                                        <dd><a href="#">骨关节炎</a></dd>
+                                        <dd><a href="#">跌打骨伤</a></dd>
+                                        <dd><a href="#">腰椎病</a></dd>
+                                        <dd><a href="#">骨质疏松</a></dd>
+                                        <dd><a href="#">通风</a></dd>
+                                        <dd><a href="#">外用贴膏</a></dd>
+                                        <dd><a href="#">器官移植</a></dd>
+                                        <dd><a href="#">骨质增生</a></dd>
+                                        <dd><a href="#">股骨头坏死</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">皮肤病</a></dt>
+                                        <dd><a href="#">皮炎廯症</a></dd>
+                                        <dd><a href="#">脱发</a></dd>
+                                        <dd><a href="#">银屑病</a></dd>
+                                        <dd><a href="#">痤疮</a></dd>
+                                        <dd><a href="#">白癜风</a></dd>
+                                        <dd><a href="#">尖锐湿疣</a></dd>
+                                        <dd><a href="#">黄褐斑</a></dd>
+                                        <dd><a href="#">疤痕</a></dd>
+                                        <dd><a href="#">灰指甲</a></dd>
+                                        <dd><a href="#">疱疹</a></dd>
+                                        <dd><a href="#">烧烫创伤</a></dd>
+                                        <dd><a href="#">过敏</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">呼吸道疾病</a></dt>
+                                        <dd><a href="#">感冒发烧</a></dd>
+                                        <dd><a href="#">咳嗽</a></dd>
+                                        <dd><a href="#">上火</a></dd>
+                                        <dd><a href="#">小儿感冒</a></dd>
+                                        <dd><a href="#">哮喘</a></dd>
+                                        <dd><a href="#">支气管炎</a></dd>
+                                        <dd><a href="#">慢性阻塞性肺疾病</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">肝病科</a></dt>
+                                        <dd><a href="#">乙肝</a></dd>
+                                        <dd><a href="#">保肝护肝</a></dd>
+                                        <dd><a href="#">胆结石</a></dd>
+                                        <dd><a href="#">免疫调节</a></dd>
+                                        <dd><a href="#">肝纤维化肝硬化</a></dd>
+                                        <dd><a href="#">胆道疾病</a></dd>
+                                        <dd><a href="#">脂肪肝</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="#">消化系统疾病</a></dt>
+                                        <dd><a href="#">胃炎</a></dd>
+                                        <dd><a href="#">胃肠溃烂</a></dd>
+                                        <dd><a href="#">结肠炎</a></dd>
+                                        <dd><a href="#">消化不良</a></dd>
+                                        <dd><a href="#">便秘</a></dd>
+                                        <dd><a href="#">腹泻</a></dd>
+                                        <dd><a href="#">痔疮</a></dd>
+                                        <dd><a href="#">小儿肠胃病</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">五官科疾病</a></dt>
+                                        <dd><a href="#">鼻炎</a></dd>
+                                        <dd><a href="#">咽喉炎</a></dd>
+                                        <dd><a href="#">眼干眼涩</a></dd>
+                                        <dd><a href="#">眼部炎症</a></dd>
+                                        <dd><a href="#">白内障</a></dd>
+                                        <dd><a href="#">青光眼</a></dd>
+                                        <dd><a href="#">耳聋耳鸣</a></dd>
+                                        <dd><a href="#">口腔溃疡</a></dd>
+                                        <dd><a href="#">牙周疼痛</a></dd>
+                                        <dd><a href="#">视网膜病变</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">妇科疾病</a></dt>
+                                        <dd><a href="#">阴道炎</a></dd>
+                                        <dd><a href="#">月经不调</a></dd>
+                                        <dd><a href="#">避孕</a></dd>
+                                        <dd><a href="#">保胎促孕</a></dd>
+                                        <dd><a href="#">更年期</a></dd>
+                                        <dd><a href="#">子宫疾病</a></dd>
+                                        <dd><a href="#">乳腺疾病</a></dd>
+                                        <dd><a href="#">盆腔炎</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">肿瘤科</a></dt>
+                                        <dd><a href="#">肺癌</a></dd>
+                                        <dd><a href="#">肝癌</a></dd>
+                                        <dd><a href="#">胃癌</a></dd>
+                                        <dd><a href="#">食道癌</a></dd>
+                                        <dd><a href="#">淋巴癌</a></dd>
+                                        <dd><a href="#">白血病</a></dd>
+                                        <dd><a href="#">乳腺癌</a></dd>
+                                        <dd><a href="#">化疗提高营养</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <a href="" class="block">
+                                        <img src="../images/YY1029253x20-9.jpg" alt="">
+                                    </a>
+                                    <a href="" class="block">
+                                        <img src="../images/YY1029253x20-8.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="icon icon-tingzhenqi"></i>
+                            <span>体检、口腔医疗</span>
+                            <div class="xiangqing">
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="" class="red">热门推荐</a></dt>
+                                        <dd><a href="">DHA</a></dd>
+                                        <dd><a href="" class="red">减肥</a></dd>
+                                        <dd><a href="">补肾</a></dd>
+                                        <dd><a href="">阿胶</a></dd>
+                                        <dd><a href="">软骨素</a></dd>
+                                        <dd><a href="">益生菌</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">强壮男人</a></dt>
+                                        <dd><a href="" class="red">补肾强身</a></dd>
+                                        <dd><a href="">前列腺养护</a></dd>
+                                        <dd><a href="">解酒护肝</a></dd>
+                                        <dd><a href="">缓解疲劳</a></dd>
+                                        <dd><a href="">增肌强身</a></dd>
+                                        <dd><a href="">番茄红素</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">美丽女人</a></dt>
+                                        <dd><a href="">减肥瘦身</a></dd>
+                                        <dd><a href="">润肠通便</a></dd>
+                                        <dd><a href="">补血补气</a></dd>
+                                        <dd><a href="" class="red">美白祛斑</a></dd>
+                                        <dd><a href="">调经养颜</a></dd>
+                                        <dd><a href="">酵素</a></dd>
+                                        <dd><a href="">左旋肉碱</a></dd>
+                                        <dd><a href="">葡萄籽</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">健康老人</a></dt>
+                                        <dd><a href="">增强免疫</a></dd>
+                                        <dd><a href="" class="red">降低血脂</a></dd>
+                                        <dd><a href="">降低血糖</a></dd>
+                                        <dd><a href="">调节血压</a></dd>
+                                        <dd><a href="">保护骨骼</a></dd>
+                                        <dd><a href="">调节睡眠</a></dd>
+                                        <dd><a href="">调节肠胃</a></dd>
+                                        <dd><a href="">鱼油</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="">妇婴保健</a></dt>
+                                        <dd><a href="" class="red">DHA</a></dd>
+                                        <dd><a href="">鱼肝油</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="#">职场保健</a></dt>
+                                        <dd><a href="#" class="red">缓解疲劳</a></dd>
+                                        <dd><a href="#">改善睡眠</a></dd>
+                                        <dd><a href="#">增强免疫</a></dd>
+                                        <dd><a href="#">保护视力</a></dd>
+                                        <dd><a href="#">调理肠胃</a></dd>
+                                        <dd><a href="#">蛋白粉</a></dd>
+                                        <dd><a href="#">西洋参</a></dd>
+                                        <dd><a href="#">叶黄素</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">营养礼盒</a></dt>
+                                        <dd><a href="#" class="red">蛋白粉</a></dd>
+                                        <dd><a href="#">氨基酸</a></dd>
+                                        <dd><a href="#">螺旋藻</a></dd>
+                                        <dd><a href="#">灵芝孢子</a></dd>
+                                        <dd><a href="#">脑白金</a></dd>
+                                        <dd><a href="#">昂立多邦</a></dd>
+                                        <dd><a href="#">太太口服液</a></dd>
+                                        <dd><a href="#">生命一号</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">热门品牌</a></dt>
+                                        <dd><a href="#" class="red">汤臣倍健</a></dd>
+                                        <dd><a href="#">碧生源</a></dd>
+                                        <dd><a href="#">修正</a></dd>
+                                        <dd><a href="#">同仁堂</a></dd>
+                                        <dd><a href="#">姿美堂</a></dd>
+                                        <dd><a href="#">康恩贝</a></dd>
+                                        <dd><a href="#">纽曼斯</a></dd>
+                                    </dl>
+                                     <dl class="clearfix">
+                                        <dt><a href="#">消化系统疾病</a></dt>
+                                        <dd><a href="#">胃炎</a></dd>
+                                        <dd><a href="#">胃肠溃烂</a></dd>
+                                        <dd><a href="#">结肠炎</a></dd>
+                                        <dd><a href="#">消化不良</a></dd>
+                                        <dd><a href="#">便秘</a></dd>
+                                        <dd><a href="#">腹泻</a></dd>
+                                        <dd><a href="#">痔疮</a></dd>
+                                        <dd><a href="#">小儿肠胃病</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <dl class="clearfix">
+                                        <dt><a href="#">肝病科</a></dt>
+                                        <dd><a href="#">乙肝</a></dd>
+                                        <dd><a href="#">保肝护肝</a></dd>
+                                        <dd><a href="#">胆结石</a></dd>
+                                        <dd><a href="#">免疫调节</a></dd>
+                                        <dd><a href="#">肝纤维化肝硬化</a></dd>
+                                        <dd><a href="#">胆道疾病</a></dd>
+                                        <dd><a href="#">脂肪肝</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">妇科疾病</a></dt>
+                                        <dd><a href="#">阴道炎</a></dd>
+                                        <dd><a href="#">月经不调</a></dd>
+                                        <dd><a href="#">避孕</a></dd>
+                                        <dd><a href="#">保胎促孕</a></dd>
+                                        <dd><a href="#">更年期</a></dd>
+                                        <dd><a href="#">子宫疾病</a></dd>
+                                        <dd><a href="#">乳腺疾病</a></dd>
+                                        <dd><a href="#">盆腔炎</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">肿瘤科</a></dt>
+                                        <dd><a href="#">肺癌</a></dd>
+                                        <dd><a href="#">肝癌</a></dd>
+                                        <dd><a href="#">胃癌</a></dd>
+                                        <dd><a href="#">食道癌</a></dd>
+                                        <dd><a href="#">淋巴癌</a></dd>
+                                        <dd><a href="#">白血病</a></dd>
+                                        <dd><a href="#">乳腺癌</a></dd>
+                                        <dd><a href="#">化疗提高营养</a></dd>
+                                    </dl>
+                                    <dl class="clearfix">
+                                        <dt><a href="#">五官科疾病</a></dt>
+                                        <dd><a href="#">鼻炎</a></dd>
+                                        <dd><a href="#">咽喉炎</a></dd>
+                                        <dd><a href="#">眼干眼涩</a></dd>
+                                        <dd><a href="#">眼部炎症</a></dd>
+                                        <dd><a href="#">白内障</a></dd>
+                                        <dd><a href="#">青光眼</a></dd>
+                                        <dd><a href="#">耳聋耳鸣</a></dd>
+                                        <dd><a href="#">口腔溃疡</a></dd>
+                                        <dd><a href="#">牙周疼痛</a></dd>
+                                        <dd><a href="#">视网膜病变</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="nav1 fl">
+                                    <a href="" class="block">
+                                        <img src="../images/baijin10piangangben.jpg" alt="">
+                                    </a>
+                                    <a href="" class="block">
+                                        <img src="../images/mandixiaotu.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../html/goodList.html">家庭常备药</a></li>
+                <li><a href="">乙肝</a></li>
+                <li><a href="" class="red">传统滋补</a></li>
+                <li><a href="">男性早泄</a></li>
+                <li><a href="">控制三高</a></li>
+                <li><a href="" class="red">中药抓药</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <div class="container">
+                <div class="wrap clearfix">
+                    <!--列表内容开始-->
+                    <!--两列开始-->
+                    <!--左边205宽-->
+                    <div class="searchColSub fl">
+                        <!--三级列表开始-->
+                        <div class="itemChoose mt">
+                            <div class="itemChooseBox">
+                                <h2><a href=" #" title="" cid="953710">
+                                        中西药品</a>
+                                </h2>
+                                <h3 class="no_bd_b">
+                                    <a href="javascript:void(0);" class="icon_btn "></a>
+                                    <a href=" #" cid="953783">
+                                        滋补调养</a>
+                                </h3>
+                                <ul class="list_ul" style="display: none">
+                                    <li>
+                                        <a href=" 953784" cid="953784">
+                                            补肾<span>(4485)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" 953785" cid="953785">
+                                            补血补气<span>(3546)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" 956104" cid="956104">
+                                            安神助眠<span>(2672)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" 956125" cid="956125">
+                                            增强抵抗力<span>(470)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" 953787" cid="953787">
+                                            减肥瘦身<span>(208)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" 972197" cid="972197">
+                                            滋补调养赠品<span>(1)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h3 class="no_bd_b">
+                                    <a href="javascript:void(0);" class="icon_btn "></a>
+                                    <a href=" #" cid="965178">
+                                        呼吸道疾病</a>
+                                </h3>
+                                <ul class="list_ul" style="display: none">
+                                    <li>
+                                        <a href=" #" cid="965184">
+                                            感冒发烧<span>(7188)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965181">
+                                            咳嗽<span>(6343)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965185">
+                                            上火<span>(5210)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="969596">
+                                            小儿感冒<span>(1764)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965179">
+                                            哮喘<span>(1540)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971543">
+                                            慢性阻塞性肺疾病<span>(310)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971542">
+                                            支气管炎<span>(1255)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h3 class="no_bd_b">
+                                    <a href="javascript:void(0);" class="icon_btn "></a>
+                                    <a href=" #" cid="965141">
+                                        男科疾病</a>
+                                </h3>
+                                <ul class="list_ul" style="display: none">
+                                    <li>
+                                        <a href=" #" cid="965143">
+                                            阳痿早泄<span>(1012)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965142">
+                                            前列腺炎<span>(1266)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965144">
+                                            泌尿系统疾病<span>(1963)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965145">
+                                            肾病<span>(926)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971286">
+                                            男性不育症<span>(293)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h3 class="no_bd_b">
+                                    <a href="javascript:void(0);" class="icon_btn "></a>
+                                    <a href=" #" cid="965163">
+                                        妇科疾病</a>
+                                </h3>
+                                <ul class="list_ul" style="display: none">
+                                    <li>
+                                        <a href=" #" cid="971603">
+                                            产后用药<span>(319)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971605">
+                                            盆腔炎<span>(636)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971604">
+                                            宫颈炎<span>(292)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971606">
+                                            痛经<span>(537)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971607">
+                                            子宫疾病用药<span>(363)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971602">
+                                            白带异常<span>(259)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="969615">
+                                            乳腺疾病<span>(731)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="969616">
+                                            更年期<span>(474)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965166">
+                                            月经不调<span>(2436)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965165">
+                                            阴道炎<span>(2864)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965164">
+                                            避孕<span>(402)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="969935">
+                                            保胎促孕<span>(410)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h3 class="no_bd_b">
+                                    <a href="javascript:void(0);" class="icon_btn "></a>
+                                    <a href=" #" cid="965171">
+                                        风湿骨科</a>
+                                </h3>
+                                <ul class="list_ul" style="display: none">
+                                    <li>
+                                        <a href=" #" cid="971322">
+                                            风湿类风湿<span>(2670)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965177">
+                                            关节炎<span>(2669)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971272">
+                                            腰椎病<span>(255)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965176">
+                                            痛风<span>(369)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965173">
+                                            跌打损伤<span>(2386)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965172">
+                                            外用贴膏<span>(1345)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965174">
+                                            疼痛用药<span>(909)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965175">
+                                            骨质疏松<span>(768)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971323">
+                                            骨质增生<span>(535)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971546">
+                                            颈椎病<span>(353)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971354">
+                                            器官移植<span>(253)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971548">
+                                            脊椎炎<span>(171)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971321">
+                                            坐骨神经痛<span>(38)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971273">
+                                            股骨头坏死<span>(33)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971351">
+                                            强直性脊柱炎<span>(14)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h3 class="no_bd_b">
+                                    <a href="javascript:void(0);" class="icon_btn "></a>
+                                    <a href=" #" cid="965155">
+                                        皮肤病</a>
+                                </h3>
+                                <ul class="list_ul" style="display: none">
+                                    <li>
+                                        <a href=" #" cid="965156">
+                                            皮炎/湿疹/脚气<span>(5137)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971295">
+                                            痤疮（青春痘）<span>(966)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965159">
+                                            烧烫创伤<span>(839)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971306">
+                                            疱疹<span>(657)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965161">
+                                            抗过敏药<span>(644)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971281">
+                                            脱发<span>(623)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971297">
+                                            银屑病（牛皮癣）<span>(609)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965160">
+                                            蚊虫叮咬<span>(470)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965158">
+                                            白癜风<span>(447)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971352">
+                                            荨麻疹<span>(334)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971350">
+                                            皮肤其他类<span>(317)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971318">
+                                            尖锐湿疣<span>(135)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971312">
+                                            黄褐斑/祛斑<span>(118)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971302">
+                                            疤痕（瘢痕）/祛疤<span>(116)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971314">
+                                            灰指甲<span>(113)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971317">
+                                            系统性红斑狼疮<span>(84)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971319">
+                                            艾滋病<span>(43)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h3 class="no_bd_b">
+                                    <a href="javascript:void(0);" class="icon_btn "></a>
+                                    <a href=" #" cid="965193">
+                                        五官科疾病</a>
+                                </h3>
+                                <ul class="list_ul" style="display: none">
+                                    <li>
+                                        <a href=" #" cid="965202">
+                                            咽喉炎<span>(3453)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965200">
+                                            鼻炎<span>(2575)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965194">
+                                            眼部炎症<span>(1907)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971569">
+                                            牙周病痛<span>(481)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965196">
+                                            白内障<span>(460)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965199">
+                                            耳聋耳鸣<span>(367)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971346">
+                                            视网膜病变<span>(230)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965198">
+                                            青光眼<span>(153)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971349">
+                                            近视弱视<span>(142)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965203">
+                                            眩晕<span>(25)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="972098">
+                                            五官其他类<span>(2)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971590">
+                                            眼部麻醉<span>(1)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965195">
+                                            眼干眼涩<span>(710)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971568">
+                                            口腔溃疡<span>(375)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h3 class="no_bd_b">
+                                    <a href="javascript:void(0);" class="icon_btn "></a>
+                                    <a href=" #" cid="965147">
+                                        消化系统疾病</a>
+                                </h3>
+                                <ul class="list_ul" style="display: none">
+                                    <li>
+                                        <a href=" #" cid="971524">
+                                            胃炎<span>(3256)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971488">
+                                            便秘<span>(1158)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965150">
+                                            消化不良<span>(3246)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965152">
+                                            腹泻<span>(3244)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965151">
+                                            胃肠溃疡<span>(2732)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965153">
+                                            痔疮<span>(1503)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="969595">
+                                            小儿肠胃病<span>(1075)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971356">
+                                            消化系统其他类<span>(723)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965154">
+                                            蛔虫病<span>(220)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971545">
+                                            营养剂<span>(59)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971274">
+                                            克罗恩病<span>(5)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965149">
+                                            结肠炎<span>(292)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h3 class="no_bd_b">
+                                    <a href="javascript:void(0);" class="icon_btn "></a>
+                                    <a href=" #" cid="953757">
+                                        心脑血管</a>
+                                </h3>
+                                <ul class="list_ul" style="display: none">
+                                    <li>
+                                        <a href=" #" cid="956108">
+                                            高血压<span>(7354)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965134">
+                                            冠心病<span>(3054)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965135">
+                                            高血脂<span>(2068)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965136">
+                                            心绞痛<span>(1623)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965138">
+                                            动脉硬化<span>(998)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965139">
+                                            心律失常<span>(655)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971344">
+                                            心力衰竭<span>(260)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965137">
+                                            心肌炎<span>(203)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971327">
+                                            血液疾病<span>(154)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971324">
+                                            低血压<span>(25)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971328">
+                                            心血管疾病（废止）<span>(3)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="956167">
+                                            脑血管病<span>(1975)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965140">
+                                            静脉曲张<span>(158)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h3 class="no_bd_b">
+                                    <a href="javascript:void(0);" class="icon_btn "></a>
+                                    <a href=" #" cid="971266">
+                                        肿瘤科</a>
+                                </h3>
+                                <ul class="list_ul" style="display: none">
+                                    <li>
+                                        <a href=" #" cid="971290">
+                                            肺癌<span>(373)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971289">
+                                            肝癌<span>(330)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971299">
+                                            淋巴癌<span>(228)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971269">
+                                            胃癌<span>(220)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971576">
+                                            升白升血小板<span>(181)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971307">
+                                            白血病<span>(178)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971308">
+                                            宫颈癌<span>(85)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965208">
+                                            癌症止痛止呕<span>(82)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971311">
+                                            甲状腺瘤<span>(75)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971310">
+                                            食道癌<span>(65)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971309">
+                                            乳腺癌<span>(50)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971291">
+                                            结直肠癌<span>(26)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971313">
+                                            睾丸肿瘤<span>(12)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971294">
+                                            前列腺癌<span>(11)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971300">
+                                            肾癌<span>(10)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971301">
+                                            骨癌<span>(8)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971303">
+                                            脑癌<span>(4)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971315">
+                                            卵巢癌<span>(4)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971305">
+                                            鼻咽癌<span>(2)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="972191">
+                                            肿瘤辅助治疗<span>(2)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="972227">
+                                            罕见病<span>(2)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971316">
+                                            化疗提高营养<span>(651)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h3 class="no_bd_b">
+                                    <a href="javascript:void(0);" class="icon_btn "></a>
+                                    <a href=" #" cid="971267">
+                                        肝病科</a>
+                                </h3>
+                                <ul class="list_ul" style="display: none">
+                                    <li>
+                                        <a href=" #" cid="971268">
+                                            乙肝<span>(2096)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965148">
+                                            肝纤维化肝硬化<span>(728)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971271">
+                                            胆道疾病<span>(710)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971535">
+                                            免疫调节<span>(257)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971536">
+                                            胆结石<span>(254)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971288">
+                                            脂肪肝<span>(86)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971673">
+                                            酒精肝<span>(57)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971276">
+                                            肝性脑病<span>(43)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971275">
+                                            丙肝<span>(4)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971283">
+                                            保肝护肝<span>(1385)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h3 class="no_bd_b">
+                                    <a href="javascript:void(0);" class="icon_btn "></a>
+                                    <a href=" #" cid="953742">
+                                        神经系统</a>
+                                </h3>
+                                <ul class="list_ul" style="display: none">
+                                    <li>
+                                        <a href=" #" cid="971329">
+                                            中风<span>(1449)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971335">
+                                            头痛偏头痛<span>(1215)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971333">
+                                            癫痫<span>(1029)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971340">
+                                            失眠<span>(767)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965188">
+                                            抑郁症<span>(660)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971334">
+                                            老年性痴呆<span>(517)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965191">
+                                            神经损伤<span>(483)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971341">
+                                            多动症<span>(356)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971336">
+                                            神经衰弱<span>(345)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965190">
+                                            帕金森<span>(333)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971332">
+                                            神经性疼痛<span>(183)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971330">
+                                            运动神经元病<span>(115)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971355">
+                                            周围神经病变<span>(110)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971339">
+                                            焦虑症<span>(90)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971343">
+                                            面瘫<span>(45)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965186">
+                                            戒烟<span>(24)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971337">
+                                            精神分裂症<span>(514)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h3 class="no_bd_b">
+                                    <a href="javascript:void(0);" class="icon_btn "></a>
+                                    <a href=" #" cid="971244">
+                                        中西药赠品</a>
+                                </h3>
+                                <ul class="list_ul" style="display: none">
+                                    <li>
+                                        <a href=" #" cid="971245">
+                                            中西药赠品1<span>(15)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h3 class="no_bd_b">
+                                    <a href="javascript:void(0);" class="icon_btn "></a>
+                                    <a href=" #" cid="965204">
+                                        内分泌</a>
+                                </h3>
+                                <ul class="list_ul" style="display: none">
+                                    <li>
+                                        <a href=" #" cid="965205">
+                                            糖尿病<span>(3389)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965661">
+                                            抗病毒药<span>(975)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="965207">
+                                            甲状腺疾病<span>(257)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h3 class="no_bd_b">
+                                    <a href="javascript:void(0);" class="icon_btn "></a>
+                                    <a href=" #" cid="971721">
+                                        中西药品维生素钙剂</a>
+                                </h3>
+                                <ul class="list_ul" style="display: none">
+                                    <li>
+                                        <a href=" #" cid="971724">
+                                            中西药品维生素<span>(628)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971722">
+                                            中西药品钙剂<span>(550)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971723">
+                                            中西药品矿物质<span>(166)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971725">
+                                            中西药品叶酸<span>(73)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h3 class="no_bd_b">
+                                    <a href="javascript:void(0);" class="icon_btn "></a>
+                                    <a href=" #" cid="971891">
+                                        中药饮片</a>
+                                </h3>
+                                <ul class="list_ul" style="display: none">
+                                    <li>
+                                        <a href=" #" cid="971892">
+                                            安神<span>(3)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971896">
+                                            活血化瘀<span>(3)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=" #" cid="971893">
+                                            补虚<span>(1)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h3 class="no_bd_b">
+                                    <a href="javascript:void(0);" class="icon_btn "></a>
+                                    <a href=" #" cid="971848">
+                                        生物制品</a>
+                                </h3>
+                                <ul class="list_ul" style="display: none">
+                                    <li>
+                                        <a href=" #" cid="971849">
+                                            人体免疫调节<span>(1)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--三级列表结束-->
+                        <!--浏览记录-->
+                        <div class="info_box mt tuijian_box">
+                            <h2>其他商品推荐</h2>
+                            <!-- <ul class="info_list02" id="browseDiv"><li class=""><div class="photo"><a href="//www.111.com.cn/product/50914186.html"><img height="50" width="50" src="https://p3.maiyaole.com/img/item/201708/07/200_20170807190557626.jpg"></a></div><p><a title="盘龙云海 怡芝堂云南文山三七超细粉 270g" href="//www.111.com.cn/product/50914186.html">盘龙云海 怡芝堂云南文山三七超细粉 270g</a><span>¥179.00</span></p></li><li class=""><div class="photo"><a href="//www.111.com.cn/product/50088751.html"><img height="50" width="50" src="https://p3.maiyaole.com/img/item/201803/16/200_20180316115931446.jpg"></a></div><p><a title="东阿阿胶 桃花姬 即食阿胶糕礼盒 180g" href="//www.111.com.cn/product/50088751.html">东阿阿胶 桃花姬 即食阿胶糕礼盒 180g</a><span>¥209.00</span></p></li></ul> -->
+                        </div>
+                        <!--浏览记录-->
+                        <div class="searchLeftBanner"></div>
+                        <!-- 百分点 -->
+                        <div id="bfd_srrec"></div>
+                        <!-- 百分点 -->
+                    </div>
+                    <!--左边205宽-->
+                    <!--右边列开始-->
+
+                    <!--面包屑-->
+                    <div id="search_result">
+                        <!--搜索选项-->
+                        <input type="hidden" id="provinceId">
+                        <div class="seachListBox">
+                            <!--选择块0917-->
+                            <!--没有选择条件不显示已经选择0925-->
+                            <div id="plist">
+                            </div>
+                            <!--1/20文件夹整合-->
+                            <div id="rankOpDiv" class="rankOp clearfix mt">
+                                <input type="hidden" id="sortPatternId" value=".html">
+                                <ul orderby="1" class="rank clearfix">
+                                    <!-- 排序方式 -->
+                                    <!--"评价"改为"好评度"，以避免歧义 -->
+                                    <li class="normal"><a onclick="return false;" rel="nofollow"
+                                            href="javascript:void(0);"><span>综合</span></a></li>
+                                    <li class="default"><a href="javascript:void(0);" rel="nofollow" sortid="21"
+                                            id="list_sale_sort"><span>销量</span></a></li>
+
+                                    <li class="default"><a href="javascript:void(0);" rel="nofollow" sortid="31"
+                                            id="list_answer_sort"><span>评论</span></a></li>
+
+
+                                    <li class="default"><a href="javascript:void(0);" rel="nofollow" sortid="61"
+                                            id="list_hot_sort"><span>人气</span></a></li>
+
+                                    <li class="default"><a href="javascript:void(0);" rel="nofollow" sortid="41"
+                                            id="list_newest_sort"><span>最新</span></a></li>
+
+                                    <li class="defaultPrice"><a href="javascript:void(0);" rel="nofollow" sortid="51"
+                                            id="list_priceDown_sort"><span>价格</span></a></li>
+                                    <!-- <li class="price_range">
+                            <div>
+                              <p><input type="text" maxlength="8" class="price_range_input" value="" id="searchPriceRangeMin">-<input type="text" class="price_range_input" maxlength="8" value="" id="searchPriceRangeMax"></p>
+                              <p class="price_range_btn">
+                                <button>确定</button>
+                                <cite>清除</cite>
+                              </p>
+                            </div>
+                          </li> -->
+                                </ul>
+                            </div>
+                            <ul class="sy_maingoods">
+                                <li syid="1">
+                                    <a href="../html/detail.html"><img src="https://p3.maiyaole.com/img/item/201711/22/org_20171122181034312.jpg"></a><br>
+                                    <span class="price">￥790.0</span><br>
+                                    <a href="../html/detail.html"><span class="list_lable_self"></span>同溢堂 益安宁丸 112丸*3瓶</a>
+                                    <span class="goldseller_name self_name">1药网自营</span><br>
+                                    <a href="../html/detail.html" class="view"> 查看详情</a><a href="../html/detail.html" class="consultation">咨询医生</a>         
+                                </li>
+                                <li syid="1">
+                                    <a href="../html/detail.html"><img src="https://p3.maiyaole.com/img/item/201711/22/org_20171122181034312.jpg"></a><br>
+                                    <span class="price">￥790.0</span><br>
+                                    <a href="../html/detail.html"><span class="list_lable_self"></span>同溢堂 益安宁丸 112丸*3瓶</a>
+                                    <span class="goldseller_name self_name">1药网自营</span><br>
+                                    <a href="../html/detail.html" class="view"> 查看详情</a><a href="../html/detail.html" class="consultation">咨询医生</a>         
+                                </li>
+                                <li syid="1">
+                                    <a href="../html/detail.html"><img src="https://p3.maiyaole.com/img/item/201711/22/org_20171122181034312.jpg"></a><br>
+                                    <span class="price">￥790.0</span><br>
+                                    <a href="../html/detail.html"><span class="list_lable_self"></span>同溢堂 益安宁丸 112丸*3瓶</a>
+                                    <span class="goldseller_name self_name">1药网自营</span><br>
+                                    <a href="../html/detail.html" class="view"> 查看详情</a><a href="../html/detail.html" class="consultation">咨询医生</a>         
+                                </li>
+                                <li syid="1">
+                                    <a href="../html/detail.html"><img src="https://p3.maiyaole.com/img/item/201711/22/org_20171122181034312.jpg"></a><br>
+                                    <span class="price">￥790.0</span><br>
+                                    <a href="../html/detail.html"><span class="list_lable_self"></span>同溢堂 益安宁丸 112丸*3瓶</a>
+                                    <span class="goldseller_name self_name">1药网自营</span><br>
+                                    <a href="../html/detail.html" class="view"> 查看详情</a><a href="../html/detail.html" class="consultation">咨询医生</a>         
+                                </li> 
+                                <li syid="1">
+                                    <a href="../html/detail.html"><img src="https://p3.maiyaole.com/img/item/201711/22/org_20171122181034312.jpg"></a><br>
+                                    <span class="price">￥790.0</span><br>
+                                    <a href="../html/detail.html"><span class="list_lable_self"></span>同溢堂 益安宁丸 112丸*3瓶</a>
+                                    <span class="goldseller_name self_name">1药网自营</span><br>
+                                    <a href="../html/detail.html" class="view"> 查看详情</a><a href="../html/detail.html" class="consultation">咨询医生</a>         
+                                </li>
+                            </ul>
+                            <div class="page"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="t1">
+                <div class="container">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <ul class="t2">
+                    <li>
+                        <img src="../images/td_code1.jpg" alt="1药网客户端二维码">
+                        <div class="right fl">
+                            <h2>
+                                1药网客户端
+                            </h2>
+                            <p>APP专享价更优惠</p>
+                            <p>购物满69满免邮</p>
+                            <p>超低移动专享价</p>
+                            <p>药监认证，正品保障</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/td_code2.jpg" alt="1药网客户端二维码">
+                        <div class="right fl">
+                            <h2>
+                                健康问答王者
+                            </h2>
+                            <p>题目有趣，猛涨知识</p>
+                            <p>答题报告，专业解析</p>
+                            <p>答题结束，得奖励金</p>
+                            <p>健康能量，药网兑换</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/td_code1.jpg" alt="1药网客户端二维码">
+                        <div class="right fl">
+                            <h2>
+                                微信公众号
+                            </h2>
+                            <p>健康资讯，科普知识</p>
+                            <p>掌上购药，轻松一点</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="t3 clearfix">
+                    <ul class="fl">
+                        <li>
+                            <h4>新手入门</h4>
+                            <a href="">常见问题</a><br>
+                            <a href="">新会员注册</a><br>
+                            <a href="">用户登录</a><br>
+                            <a href="">找回密码</a>
+                        </li>
+                        <li>
+                            <h4>购物指南</h4>
+                            <a href="">购物流程</a><br>
+                            <a href="">订单状态说明</a><br>
+                            <a href="">隐私声明</a><br>
+                            <a href="">发票制度</a>
+                        </li>
+                        <li>
+                            <h4>配送服务</h4>
+                            <a href="">范围、时间及费用</a><br>
+                            <a href="">商品验货及签收</a><br>
+                            <a href="">门店自提</a>
+                        </li>
+                        <li>
+                            <h4>支付方式</h4>
+                            <a href="">货到付款</a><br>
+                            <a href="">网上支付</a><br>
+                            <a href="">银行转账</a><br>
+                            <a href="">激活优惠券</a>
+                        </li>
+                        <li>
+                            <h4>售后服务</h4>
+                            <a href="">退换货政策</a><br>
+                            <a href="">退换货流程</a><br>
+                            <a href="">退款方式和时效</a><br>
+                            <a href="">售后常见问题</a>
+                        </li>
+                        <li>
+                            <h4>企业服务</h4>
+                            <a href="">供应商合作</a><br>
+                            <a href="">供应商入口</a><br>
+                            <a href="">商家入驻</a>
+                        </li>
+                    </ul>
+                    <div class="dianhua fr">
+                        <p class="tel">400-007-0958</p>
+                        <p class="time">
+                            周一到周日 8:30-22:00<br>
+                            （收取市话费）
+                        </p>
+                    </div>
+                </div>
+                <div class="t4">
+                    <a href="">关于111集团</a>
+                    <a href="">关于1药网</a>
+                    <a href="" style="color: red">诚聘英才</a>
+                    <a href="">直营实体药房</a>
+                    <a href="">互联网药品信息服务资格证</a>
+                    <a href="">互联网药品交易资格证：粤C20150007</a>
+                </div>
+                <div class="t5">
+                    <a href="">连锁营业执照</a>
+                    <a href="">药品经营许可证</a>
+                    <a href="">医疗器械许可证</a>
+                    <a href="">食品经营许可证</a>
+                    <a href="">GSP证书</a>
+                    <a href="">ICP粤B2-20150066</a>
+                </div>
+                <!-- <div class="t6">
+                    <img src="../images/FooterLogo.png" alt="">
+                </div> -->
+                <div class="t7">
+                    <a href="#">1药网网上药店</a>
+                    <span>,国家药监局认证通过的合法网上药店，中国医药电子商务行业的开拓者领跑者。</span>
+                    <a href="#">粤ICP备12015869号-1</a>
+                    <br>
+                    <span>
+                        公司名称：广东壹号大药房连锁有限公司 公司地址：广东省广州市越秀区共和西路1号2层 联系电话：020-31067218
+                    </span>
+                    <br>
+                    <span>Copyright (C) 2010-2015 1药网版权所有</span>
+                    <a href="#"><i class="icon icon-yisheng"></i>公安备案号 44010402000743</a>
+                </div>
+            </div>../
+        </div>
+    </div>
+</body>
+
+</html>

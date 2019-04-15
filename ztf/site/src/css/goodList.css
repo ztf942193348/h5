@@ -1,0 +1,380 @@
+/* 商品分类 */
+.daohang>ul{display: none}
+.daohang:hover>ul{display: block}
+
+#main .seachListBox{margin-left:184px;width: 1000px;margin-top:2px;}
+
+
+#main .icon_btn{background: url("../images/goodslist/1.png") no-repeat 0px 0px;background-position: -53px 13px;height: 38px;outline: none;float:left;}
+#main .open{background-position: -15px 13px;}
+
+/*商品列表*/
+#main .sy_maingoods{height: 740px}
+#main .sy_maingoods li{display:inline-block;width: 230px;height: 350px;margin-left:100px;padding-top: 20px;}
+#main .sy_maingoods li a:nth-of-type(2){display:block;height: 32px;color:#5E5E5E;}
+#main .sy_maingoods li a{cursor: pointer;}
+#main .sy_maingoods li img{width: 200px;height: 200px;}
+
+#main .sy_maingoods .price{color:#f00;line-height: 22px;font-weight: bold;font-size: 16px;
+    height: 22px;}
+
+
+#main .sy_maingoods .view{display:inline-block;background:url(///s.maiyaole.com/images/201306/images/searchList/search_detail_ico.png) no-repeat;background-position: 3px 50%;;background-size: 14px auto;padding:0 30px;width:50px;height:30px;border:1px solid #ccc;border-right:0;margin-top:5px;line-height: 30px;color:#5E5E5E;}
+
+#main .sy_maingoods .consultation{display:inline-block;background:url(//s.maiyaole.com/images/201306/images/searchList/search_consult_on.png) no-repeat;background-position: 15px 50%;background-size: 14px auto;padding:0 30px;width:50px;height: 30px;border:1px solid #ccc;margin-top:5px;color:#ff6666;line-height: 30px;}
+
+
+
+
+#main .self_name{ background: url("../images/goodslist/2.png") no-repeat 0 50%;
+    padding-left: 18px;
+    width: auto;}
+
+
+
+
+
+/*==========推荐=============*/
+#main .tuijian_box{text-align: center;}
+#main .tuijian_box a{display:block;color:#000;margin:10px 10px;}
+#main .tuijian_box span{color:red;font-size: 16px;}
+
+
+
+
+
+/*===============原网====================*/
+
+
+/*��ಿ��*/
+.searchColSub {width: 180px;}
+.itemChoose {overflow: hidden;margin:10px 0;border:1px solid #dbdbdb;border-top:0;}
+.itemChoose h2 {font-size: 14px;font-weight: bold;padding: 8px 12px 9px;background-color: #ddd;border-top:1px solid #dbdbdb;}
+.itemChoose h3 {height: 36px;overflow: hidden;padding: 0 5px 0 15px;font-size: 12px;line-height: 36px;border-top: 1px solid #e6e6e6;background-color: #f5f5f5;}
+.itemChoose h2 a, .itemChoose h3 a, .itemChoose li a {color: #5e5e5e;}
+.itemChoose h3 a:hover, .itemChoose li a:hover {color: #e54948;}
+.itemChoose li a span {color: #999;font-weight: normal;}
+.itemChoose li a:hover span {color: #e54948;}
+.itemChoose ul {padding: 7px 0;overflow: hidden;}
+.itemChoose li {line-height: 25px;white-space: nowrap;padding: 0 5px 0 34px;}
+.itemChoose li a.current, .itemChoose li a.current:hover,.itemChoose li a.current span {color: #e54948;}
+.itemChoose ul.show {display: block;}
+.itemChoose .icon_btn {float: left;width: 18px;height: 24px;outline: none;background-position: -53px 13px;}
+.itemChoose h3 .icon_btn {height: 38px;}
+.itemChoose h3 a:hover .icon_btn {background-position: -72px 13px;}
+.itemChoose h3 .icon_btn.open {background-position: -15px 13px;}
+.itemChoose h3 a:hover .icon_btn.open {background-position: -34px 13px;}
+
+
+.info_box {border: 1px solid #e6e6e6;color: #5e5e5e;line-height: 1.5;margin-bottom: 10px;}
+.info_box h2 {background-color: #f5f5f5;border-bottom: 1px solid #e6e6e6;font-size: 14px;font-weight: bold;padding: 8px 12px 9px;}
+
+.info_box .info_list01 {padding: 10px 0 20px;}
+.info_box .info_list01 li {float: left;height: 20px;overflow: hidden;padding: 7px 0 0 13px;width: 80px;}
+
+.info_box .info_list02 {font-size: 12px;overflow: hidden; zoom:1;}
+.info_box .info_list02 li {border-bottom: 1px dotted #ebebeb;float: left;overflow: hidden;padding: 12px 19px 13px 13px; width:145px; margin-bottom:-1px;}
+.info_box .info_list02 li .photo {float: left;margin: 3px 10px 0 0;}
+.info_box .info_list02 li .photo a {display: block;}
+.info_box .info_list02 li p {display: block;float: left;width: 80px;}
+.info_box .info_list02 li p span {color: #e72418;display: block;font-family: Arial;font-weight: bold;}
+.info_box .info_list02 li p a {display: block;height: 35px;overflow: hidden;zoom: 1;}
+.info_box .info_list02 li p a:hover {text-decoration: underline;}
+
+
+
+
+
+.deleteAll {float: right;padding-left: 20px;color: 5e5e5e;margin-top: 6px;background-position: -2px -684px;}
+.deleteAll:hover {background-position: -102px -684px; text-decoration:none;}
+
+
+
+
+
+.selection p {display: none;width: 745px;margin-top: 30px;text-align: center;}
+.selection button {width: 45px;height: 23px;margin: 0 7px;border: 0;background-position: 0 0;}
+.selection .confirm {background: #cbcbcb none;color: #fff;}
+.selection .clickable {background: #e54948 none;color: #fff;cursor: pointer;}
+.selection .clickable:hover {background: #e54948 none;color: #fff;}
+.selection .cancel {border: 1px solid #dbdbdb;background: #fff none;color: #5e5e5e;cursor: pointer;}
+
+
+
+
+.rankOp {height: 30px;border: 1px solid #dbdbdb;background: #f5f5f5;line-height: 30px;}
+.rankOp ul, .rankOp li {float: left;}
+.rankOp ul.rank li {border-right: 1px solid #dbdbdb;}
+.rankOp ul.rank .rank_select {color: #e54948;}
+.rankOp ul.rank li a {display: block;padding: 0 10px;color: #333; text-decoration:none;}
+.rankOp ul.rank li a:hover {background: #fff;}
+.rankOp ul.rank li.normal a {color: #e54948;}
+.rankOp ul.rank li span {display: block;background-position: 0 0;padding: 0 10px;}
+.rankOp ul.rank li.default span {background-position: right -400px;}
+.rankOp ul.rank li.defaultPrice span {background-position: right -333px;}
+.rankOp ul.rank li.defaultPrice.priceUp span {background-position: right -356px;color: #e54948;font-weight: bold;}
+.rankOp ul.rank li.defaultPrice.priceDown span {background-position: right -379px;color: #e54948;font-weight: bold;}
+.rankOp ul.rank li.defaultPrice.priceUp a, .rankOp ul.rank li.defaultPrice.priceDown a {background-color: #fff;}
+.rankOp ul.rank li.up a, .rankOp ul.rank li.down a, .rankOp ul.rank li.normal {background: #fff;color: #e54948;font-weight: bold;}
+.rankOp ul.rank li.up span {background-position: right -440px;}
+.rankOp ul.rank li.down span {background-position: right -420px;}
+
+.price_range {width: 96px;height: 30px;border-right: 0;}
+.price_range div {width: 86px;padding: 0 4px 0 6px; position: relative;z-index: 10;}
+.price_range p {line-height: 18px;padding-top: 6px;}
+.price_range input {width: 31px;height: 16px;margin: 0 3px;padding-left: 1px;border: 1px solid #ccc;color: #999;vertical-align: middle;}
+.price_range input.cur {margin: -1px 2px;border: 2px solid #58baef;}
+.price_range_btn {display: none;padding: 6px 2px 5px 3px;}
+.price_range_btn cite {color: #06c;font-style: normal;line-height: 22px;cursor: pointer;}
+.price_range_btn button {float: right;width: 40px;height: 22px;border: none;background-position: 0 -80px;cursor: pointer;}
+.rank .price_range.cur div {margin-left: -1px;border: 1px solid #ccc;border-top: 0;background: #fff;box-shadow: 2px 2px 4px #ddd;}
+.price_range.cur p.price_range_btn {display: block;}
+.rankOp ul.select {padding-left: 10px;border-right: 1px solid #DBDBDB;}
+.rank_select {margin-right: 12px;_padding-top: 12px;}
+.rank_select b {color: #e54948;}
+.rank_select input {margin: 0 5px 0 4px;_margin: -3px 0 0 0;vertical-align: middle;}
+.rank_select label {cursor: pointer;}
+
+.rankOp .ticket_pro_search{ display:inline-block; margin-left:10px;}
+.rankOp .ticket_pro_search .search_box{ width:100px; height:20px; line-height:20px; border:1px solid #ccc; text-indent:8px;}
+.rankOp .ticket_pro_search .search_btn{ width:40px; height:20px; line-height:20px; text-align:center; border-radius:4px; background:#FF6666; color:#fff; font-size:12px; cursor:pointer; margin-left:8px; display:inline-block;}
+.rankOp .ticket_pro_search .search_btn:hover{ text-decoration:none;}
+
+.rankOp ul.page {float: right;margin-right: 5px;}
+.rankOp ul.page .pageNum {padding-right: 7px;color: #333;}
+.rankOp ul.page .pageNum span {color: #e54948;}
+.rankOp ul.page a {float: left;margin: 8px 0 0 5px;padding: 2px;border: 1px solid #dbdbdb;background-color: #fff;line-height: 15px;}
+.rankOp ul.page a.cur {background: #f3f3f3;color: #e54948;font-weight: bold;}
+.rankOp ul.page a.prev, .rankOp ul.page a.next {display: inline;float: left;width: 18px;height: 18px;margin: 6px 5px 0 0;padding: 0;border: none;background-position: 0 0;text-indent: -999em;}
+.rankOp ul.page a.prev {background-position: 0 -310px;}
+.rankOp ul.page a.prevNo {background-position: -36px -310px;}
+.rankOp ul.page a.next {background-position: -18px -310px;}
+.rankOp ul.page a.nextNo {background-position: -54px -310px;}
+
+
+
+
+
+
+
+
+
+
+/*******金牌药房******/
+.goldseller_text{
+    height: 20px;
+    width: 60px;
+    margin-bottom:8px;
+    background:#FEAF42 ;
+    display: inline-block;
+    color:#FFFFFF;
+    line-height:20px ;
+    text-align: center;
+    margin-right:8px;
+}
+.goldseller_name {
+    height: 20px;
+    width: 110px;
+    color:#5E5E5E;
+    display: inline-block;
+    line-height: 20px;
+    text-align: left;
+    overflow:hidden;
+    position:relative;
+    margin-left:0;
+    top:5px;
+}
+
+
+
+
+
+
+/*===============================头部购物车==================================*/
+
+
+#search .erweima .minicart_list{
+    display:none;
+    position: absolute;
+    width: 350px;
+    z-index: 10000;
+    border: #e72418 1px solid;
+    border-top: #e72418 2px solid;
+    font: 12px Arial,tahoma,\5b8b\4f53;
+    background: #fff;
+    right:120px;
+    top:172px;
+}
+#search .erweima .list_detail{
+    width: 100%;
+    margin:0;
+}
+
+
+#search .erweima .minicart_list .checkout_box{
+    margin:0;
+    float: left;
+    width: 327px;
+    background: #f7f7f7;
+    padding: 10px;
+}
+
+#search .erweima .minicart_list .checkout_btn{
+    width: 70px;
+    height: 27px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #e72418;
+    border-bottom: #c60000 1px solid;
+    border-radius: 1px;
+}
+
+#search .erweima .none_tips{
+    display:inline-block;
+    border:0 none;
+    width:330px;
+    text-align: left;
+    padding:0;
+}
+
+#search .erweima .none_tips i{
+    border:0 none;
+    display:inline-block;
+    width:80px;
+    height: 76px;
+    margin-right:20px;
+    padding:0;    
+    background: url("../images/cart/1.png") no-repeat left;
+    background-position:-15px -285px;
+}
+
+#search .erweima .none_tips>p{
+    display:inline-block;
+    width:150px;
+    height: 56px;
+    color: #a5a5a5;
+    padding-top: 20px;
+    line-height:20px;
+    vertical-align: top;
+}
+
+
+/*==================头部购物车============================*/
+#search .minicart_list{
+    display:none;
+}
+
+
+
+
+#search .minicart_list .list_detail .cartgoods{
+    text-align: left;
+    width:330px;
+    margin: 0 1px;
+    max-height: 329px;
+    /*min-height: 142px;*/
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+#search .minicart_list .cartgoods li{
+
+    width: 328px;
+    height: 40px;
+    padding: 10px 10px;
+    border-bottom: 1px solid #f3f3f3;
+    position: relative;
+    z-index: 999;
+
+}
+#search .minicart_list .cartgoods .pro_name{
+    display:inline-block;
+    line-height: 20px;
+    width: 130px;
+    height: 40px;
+    overflow: hidden;
+    line-height:20px;
+    color:#5e5e5e;
+    vertical-align:middle;
+    margin:0 2px;
+}
+
+#search .minicart_list .cartgoods .pro_price{
+    color:red;
+    font-weight: bold;
+}
+
+#search .minicart_list .num_box{
+    float:right;
+    border:0 none;
+    display:inline-block;
+    vertical-align: middle;
+    width:100px;
+    margin:0;
+}
+
+#search .minicart_list .num_box b{
+    width: 13px;
+    height: 13px;
+    margin-top: 3px;
+    border: 0;
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+#search .minicart_list .num_box .minus{
+    background: url("../images/goodslist/1.png") no-repeat right 0; 
+     background-position: 0 -581px;
+}
+#search .minicart_list .num_box .plus{
+    background: url("../images/goodslist/1.png") no-repeat right 0;
+        margin-left: 3px;
+    background-position: -15px -581px;
+}
+
+.num_box .minicart_num{
+    width: 28px;
+    height: 16px;
+    margin-top: 3px;
+    border: 1px solid #cfcfcf;
+    text-align: center;
+    vertical-align: middle;
+    color: #262626;
+}
+
+.minus{
+    width: 13px;
+    height: 13px;
+    margin-top: 3px;
+    border: 0;
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+}
+/*下面的span*/
+.page{
+    text-align: center;
+}
+.page span {
+    display: inline-block;
+    margin: 5px;
+    width: 40px;
+    line-height: 1.8;
+    text-align: center;
+    background-color: #dfdfdf;
+    color: #666;
+}
+
+.page span.active {
+    background-color: #fc0;
+    color: #fff;
+}

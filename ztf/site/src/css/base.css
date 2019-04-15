@@ -1,0 +1,76 @@
+/*(1)清除默认样式*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,input{ margin:0; padding:0; }
+fieldset, img,input,button { border:0 none; padding:0;margin:0;outline-style:none; }  
+ /*去掉input等聚焦时的蓝色边框*/
+ul,li,ol{ list-style:none; }
+select, input { vertical-align:middle;}
+textarea { resize:none; } /*防止拖动*/
+img {vertical-align:middle; }  
+/*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+table { border-collapse:collapse; }
+a {text-decoration:none; }
+h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:1em;}/*设置h标签的大小，设置跟父元素一样大的字体font-size:100%;*/
+s,i,em{font-style:normal;text-decoration:none;}
+b{font-weight:normal;}
+/*2.添加公共样式*/
+body {
+    font:12px "微软雅黑";
+    color:#666;
+    box-sizing: border-box;
+}
+html,body{
+  min-width: 1190px;
+}
+/*公共类*/
+.clearfix:after{
+    content:"";
+    display:block;
+    height:0;
+    clear:both;
+    overflow:hidden;
+    visibility:hidden;
+    }
+
+.container {  /*内容、版心 提取 */
+    width: 1190px;
+    margin:0 auto;
+}
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
+.ac {
+    text-align:center;
+}
+.hide {
+    display:none;
+}
+.f12{ font-size: 12px;}
+.f14{ font-size: 14px;}
+.f16{ font-size: 16px;}
+
+.red{color:red;}
+a:hover{text-decoration: underline;}
+
+/*=======================================字体图标===========================================*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../font/iconfont.woff2') format('woff2'),
+      url('../font/iconfont.woff') format('woff'),
+      url('../font/iconfont.ttf') format('truetype'),
+      url('../font/iconfont.svg#iconfont') format('svg');
+}
+/* 定义使用iconfont的样式 */
+.icon {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* 挑选相应图标并获取字体编码，应用于页面 */
+/* <span class="iconfont">&#x33;</span> */
